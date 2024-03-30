@@ -1,0 +1,863 @@
+[
+    {
+        "label": "py_avataaars",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "py_avataaars",
+        "description": "py_avataaars",
+        "detail": "py_avataaars",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSlider",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PyQt6.QtWidgets",
+        "description": "PyQt6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PyQt6.QtGui",
+        "description": "PyQt6.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PyQt6.QtGui",
+        "description": "PyQt6.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PyQt6.QtGui",
+        "description": "PyQt6.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PyQt6.QtGui",
+        "description": "PyQt6.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PyQt6.QtGui",
+        "description": "PyQt6.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PyQt6.QtCore",
+        "description": "PyQt6.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "QWebEngineView",
+        "importPath": "PyQt6.QtWebEngineWidgets",
+        "description": "PyQt6.QtWebEngineWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt6.QtWebEngineWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "importPath": "sklearn.metrics.pairwise",
+        "description": "sklearn.metrics.pairwise",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics.pairwise",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDF2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "dnnlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dnnlib",
+        "description": "dnnlib",
+        "detail": "dnnlib",
+        "documentation": {}
+    },
+    {
+        "label": "dnnlib.tflib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dnnlib.tflib",
+        "description": "dnnlib.tflib",
+        "detail": "dnnlib.tflib",
+        "documentation": {}
+    },
+    {
+        "label": "pytesseract",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytesseract",
+        "description": "pytesseract",
+        "detail": "pytesseract",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "avatar",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.day2.creating_avatars",
+        "description": "allscripts.20days_scripts.day2.creating_avatars",
+        "peekOfCode": "avatar = pa.PyAvataaar(\n    style=pa.AvatarStyle.CIRCLE,\n    skin_color=pa.SkinColor.LIGHT,\n    hair_color=pa.HairColor.BROWN,\n    facial_hair_type=pa.FacialHairType.DEFAULT,\n    facial_hair_color=pa.HairColor.BLACK,\n    top_type=pa.TopType.SHORT_HAIR_SHORT_FLAT,\n    hat_color=pa.Color.BLACK,\n    mouth_type=pa.MouthType.SMILE,\n    eye_type=pa.EyesType.DEFAULT,",
+        "detail": "allscripts.20days_scripts.day2.creating_avatars",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "allscripts.20days_scripts.day2.interactivemanipulate",
+        "description": "allscripts.20days_scripts.day2.interactivemanipulate",
+        "peekOfCode": "class MainWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setFixedSize(1200, 600)\n        layout = QVBoxLayout(self)\n        self.setLayout(layout)\n        self.image_label = QLabel(self)\n        self.image_label.setFixedSize(600, 300)\n        layout.addWidget(self.image_label)\n        self.blur_button = QPushButton(\"Apply Blur\", self)",
+        "detail": "allscripts.20days_scripts.day2.interactivemanipulate",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "allscripts.20days_scripts.day2.interactiveqt",
+        "description": "allscripts.20days_scripts.day2.interactiveqt",
+        "peekOfCode": "class MainWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setFixedSize(1200,500)\n        self.image_label=QLabel(self)\n        self.image_label.setFixedSize(600,300)\n        # from py_avataaars import PyAvataaar\n        # avatar = PyAvataaar()\n        import py_avataaars as pa\n        avatar = pa.PyAvataaar(",
+        "detail": "allscripts.20days_scripts.day2.interactiveqt",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "allscripts.20days_scripts.day2.manipulate",
+        "description": "allscripts.20days_scripts.day2.manipulate",
+        "peekOfCode": "class MainWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setFixedSize(1200, 500)\n        layout = QVBoxLayout(self)\n        self.setLayout(layout)\n        self.image_label = QLabel(self)\n        self.image_label.setFixedSize(600, 300)\n        layout.addWidget(self.image_label)\n        self.blur_button = QPushButton(\"Apply Blur\", self)",
+        "detail": "allscripts.20days_scripts.day2.manipulate",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "allscripts.20days_scripts.day2",
+        "description": "allscripts.20days_scripts.day2",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    def __init__(self):\n        super().__init__()\n        # Set window title and size\n        self.setWindowTitle(\"Avatar Creator\")\n        self.setGeometry(100, 100, 800, 600)\n        # Create a central widget and layout\n        central_widget = QWidget()\n        self.setCentralWidget(central_widget)\n        layout = QVBoxLayout()",
+        "detail": "allscripts.20days_scripts.day2",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit_app",
+        "kind": 2,
+        "importPath": "allscripts.20days_scripts.day2",
+        "description": "allscripts.20days_scripts.day2",
+        "peekOfCode": "def streamlit_app():\n    # Your Streamlit code here\n    st.sidebar.markdown('## Create your avatar')\n    import streamlit as st\n    import py_avataaars as pa\n    from PIL import Image\n    import random\n    st.set_page_config(layout=\"wide\")\n    # wide app\n    st.sidebar.markdown('## Create your avatar')",
+        "detail": "allscripts.20days_scripts.day2",
+        "documentation": {}
+    },
+    {
+        "label": "match_data",
+        "kind": 2,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "def match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:\n        if skin.name == chosen_skin_color:\n            show_skin_enum = skin\n    for skin in pa.TopType:\n        if skin.name == top_type.replace(' ', '_'):\n            top_type_enum = skin\n    for skin in pa.MouthType:",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "skin_color2",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "skin_color2 = [skin.name.replace('_', ' ') for skin in pa.SkinColor]\nwith st.sidebar:\n    st.markdown(\"**General**\")\n    style = st.sidebar.selectbox(\"Avatar Style\", ([style for style in pa.AvatarStyle]))\n    if style == pa.AvatarStyle.TRANSPARENT:\n        chosen_bg_color = 'BLACK'\n    else:\n        chosen_bg_color = st.sidebar.selectbox(\"Background Color\", [bg.name.replace('_', ' ') for bg in pa.Color])\n    st.markdown(\"**Facial**\")\n    skin_color = st.sidebar.selectbox(\"Skin Color\", [skin.name.replace('_', ' ') for skin in pa.SkinColor])",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "chosen_skin_color",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "chosen_skin_color = skin_color.replace(' ', '_')\nchosen_hair_color = hair_color.replace(' ', '_')\nchosen_bg_color = chosen_bg_color.replace(' ', '_')\nfacial_type_color = facial_type.replace(' ', '_')\nclothe_type_color = clothe_type.replace(' ', '_')\ncolor_clothes_type = color_clothes.replace(' ', '_')\ndef match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "chosen_hair_color",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "chosen_hair_color = hair_color.replace(' ', '_')\nchosen_bg_color = chosen_bg_color.replace(' ', '_')\nfacial_type_color = facial_type.replace(' ', '_')\nclothe_type_color = clothe_type.replace(' ', '_')\ncolor_clothes_type = color_clothes.replace(' ', '_')\ndef match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:\n        if skin.name == chosen_skin_color:",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "chosen_bg_color",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "chosen_bg_color = chosen_bg_color.replace(' ', '_')\nfacial_type_color = facial_type.replace(' ', '_')\nclothe_type_color = clothe_type.replace(' ', '_')\ncolor_clothes_type = color_clothes.replace(' ', '_')\ndef match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:\n        if skin.name == chosen_skin_color:\n            show_skin_enum = skin",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "facial_type_color",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "facial_type_color = facial_type.replace(' ', '_')\nclothe_type_color = clothe_type.replace(' ', '_')\ncolor_clothes_type = color_clothes.replace(' ', '_')\ndef match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:\n        if skin.name == chosen_skin_color:\n            show_skin_enum = skin\n    for skin in pa.TopType:",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "clothe_type_color",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "clothe_type_color = clothe_type.replace(' ', '_')\ncolor_clothes_type = color_clothes.replace(' ', '_')\ndef match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:\n        if skin.name == chosen_skin_color:\n            show_skin_enum = skin\n    for skin in pa.TopType:\n        if skin.name == top_type.replace(' ', '_'):",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "color_clothes_type",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "color_clothes_type = color_clothes.replace(' ', '_')\ndef match_data():\n    global show_skin_enum, show_hair_enum, show_bg_enum, facial_type_enum, clothe_type_enum, color_clothes_enum\n    global facial_enum, top_type_enum, hat_col_enum, mouth_type_enum, eye_type_enum, eyebrow_type_enum, accessories_type_enum, clothe_graphic_type_enum\n    for skin in pa.SkinColor:\n        if skin.name == chosen_skin_color:\n            show_skin_enum = skin\n    for skin in pa.TopType:\n        if skin.name == top_type.replace(' ', '_'):\n            top_type_enum = skin",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "allscripts.20days_scripts.dayone",
+        "description": "allscripts.20days_scripts.dayone",
+        "peekOfCode": "image = Image.open('avatar.png')\nst.image(image)\nst.download_button(label='Download Avatar',\n                   data=open('avatar.png', 'rb').read(),\n                   file_name='avatar.png',\n                   mime='image/png')",
+        "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "TextbookQA",
+        "kind": 6,
+        "importPath": "allscripts.test_scripts.aibookchamp",
+        "description": "allscripts.test_scripts.aibookchamp",
+        "peekOfCode": "class TextbookQA:\n    def __init__(self, master):\n        self.master = master\n        master.title(\"Textbook Question Answering System\")\n        self.text = None\n        self.textbook_data = None\n        self.tfidf_vectorizer = TfidfVectorizer()\n        self.tfidf_matrix = None\n        self.upload_button = tk.Button(master, text=\"Upload Textbook\", command=self.upload_textbook)\n        self.upload_button.pack()",
+        "detail": "allscripts.test_scripts.aibookchamp",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.aibookchamp",
+        "description": "allscripts.test_scripts.aibookchamp",
+        "peekOfCode": "def main():\n    root = tk.Tk()\n    app = TextbookQA(root)\n    root.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "allscripts.test_scripts.aibookchamp",
+        "documentation": {}
+    },
+    {
+        "label": "load_stylegan_model",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.simpleavatar",
+        "description": "allscripts.test_scripts.simpleavatar",
+        "peekOfCode": "def load_stylegan_model():\n    # Load pre-trained StyleGAN model (example)\n    # Replace this with the actual loading of your pre-trained StyleGAN model\n    tflib.init_tf()\n    with dnnlib.util.open_url('https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/ffhq.pkl') as f:\n        _, _, Gs = pickle.load(f)\n    return Gs\n# Generate human-like image using StyleGAN model\ndef generate_human_like_image(model, latent_dim=512):\n    # Generate random latent vector",
+        "detail": "allscripts.test_scripts.simpleavatar",
+        "documentation": {}
+    },
+    {
+        "label": "generate_human_like_image",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.simpleavatar",
+        "description": "allscripts.test_scripts.simpleavatar",
+        "peekOfCode": "def generate_human_like_image(model, latent_dim=512):\n    # Generate random latent vector\n    latent_vector = np.random.randn(1, latent_dim)\n    # Generate human-like image\n    image = model.get_output_for(latent_vector, randomize_noise=False)\n    return image.numpy().squeeze()\ndef main():\n    # Load the pre-trained StyleGAN model\n    stylegan_model = load_stylegan_model()\n    # Generate human-like image",
+        "detail": "allscripts.test_scripts.simpleavatar",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.simpleavatar",
+        "description": "allscripts.test_scripts.simpleavatar",
+        "peekOfCode": "def main():\n    # Load the pre-trained StyleGAN model\n    stylegan_model = load_stylegan_model()\n    # Generate human-like image\n    human_like_image = generate_human_like_image(stylegan_model)\n    # Plot the generated human-like image\n    plt.imshow(human_like_image)\n    plt.axis('off')\n    plt.title('Generated Human-like Image')\n    plt.show()",
+        "detail": "allscripts.test_scripts.simpleavatar",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "def upload_image():\n    file_path = filedialog.askopenfilename(filetypes=[(\"Image files\", \"*.png;*.jpg;*.jpeg\")])\n    if file_path:\n        display_image(file_path)\n        extract_text(file_path)\n# Function to display the uploaded image\ndef display_image(file_path):\n    img = Image.open(file_path)\n    img = img.resize((300, 300))  # Resize image for display\n    img_tk = ImageTk.PhotoImage(img)",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "display_image",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "def display_image(file_path):\n    img = Image.open(file_path)\n    img = img.resize((300, 300))  # Resize image for display\n    img_tk = ImageTk.PhotoImage(img)\n    image_label.config(image=img_tk)\n    image_label.image = img_tk\n# Function to extract text from the image\ndef extract_text(file_path):\n    try:\n        text = pytesseract.image_to_string(Image.open(file_path))",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "extract_text",
+        "kind": 2,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "def extract_text(file_path):\n    try:\n        text = pytesseract.image_to_string(Image.open(file_path))\n        text_entry.delete(1.0, tk.END)\n        text_entry.insert(tk.END, text)\n    except Exception as e:\n        messagebox.showerror(\"Error\", f\"Failed to extract text: {str(e)}\")\n# Main Tkinter window\nroot = tk.Tk()\nroot.title(\"Image Text Extractor\")",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Image Text Extractor\")\n# Upload button\nupload_button = tk.Button(root, text=\"Upload Image\", command=upload_image)\nupload_button.pack(pady=10)\n# Image display\nimage_label = tk.Label(root)\nimage_label.pack()\n# Text display\ntext_entry = tk.Text(root, height=10, width=40)",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "upload_button",
+        "kind": 5,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "upload_button = tk.Button(root, text=\"Upload Image\", command=upload_image)\nupload_button.pack(pady=10)\n# Image display\nimage_label = tk.Label(root)\nimage_label.pack()\n# Text display\ntext_entry = tk.Text(root, height=10, width=40)\ntext_entry.pack(pady=10)\n# Start the Tkinter event loop\nroot.mainloop()",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "image_label",
+        "kind": 5,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "image_label = tk.Label(root)\nimage_label.pack()\n# Text display\ntext_entry = tk.Text(root, height=10, width=40)\ntext_entry.pack(pady=10)\n# Start the Tkinter event loop\nroot.mainloop()",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "text_entry",
+        "kind": 5,
+        "importPath": "allscripts.test_scripts.textextractor",
+        "description": "allscripts.test_scripts.textextractor",
+        "peekOfCode": "text_entry = tk.Text(root, height=10, width=40)\ntext_entry.pack(pady=10)\n# Start the Tkinter event loop\nroot.mainloop()",
+        "detail": "allscripts.test_scripts.textextractor",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "avatar_colab.asgi",
+        "description": "avatar_colab.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "avatar_colab.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-+s8e6shze-j)eotl7m40ly+kdwh)1f2qmwba3go+ko!=m7um^a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-+s8e6shze-j)eotl7m40ly+kdwh)1f2qmwba3go+ko!=m7um^a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework.authtoken',\n    'rest_framework_simplejwt',",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'avatar_colab.urls'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "ROOT_URLCONF = 'avatar_colab.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'avatar_colab.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "avatar_colab.settings",
+        "description": "avatar_colab.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "avatar_colab.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "avatar_colab.urls",
+        "description": "avatar_colab.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "detail": "avatar_colab.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "avatar_colab.wsgi",
+        "description": "avatar_colab.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "avatar_colab.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'avatar_colab.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
