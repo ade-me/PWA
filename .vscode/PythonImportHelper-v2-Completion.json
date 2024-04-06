@@ -286,12 +286,78 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "random",
         "description": "random",
         "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -350,15 +416,6 @@
         "importPath": "PyPDF2",
         "description": "PyPDF2",
         "detail": "PyPDF2",
-        "documentation": {}
-    },
-    {
-        "label": "tensorflow",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "detail": "tensorflow",
         "documentation": {}
     },
     {
@@ -494,6 +551,510 @@
         "documentation": {}
     },
     {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "trimesh",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "trimesh",
+        "description": "trimesh",
+        "detail": "trimesh",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm_notebook",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.cm",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.cm",
+        "description": "matplotlib.cm",
+        "detail": "matplotlib.cm",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "inv",
+        "importPath": "numpy.linalg",
+        "description": "numpy.linalg",
+        "isExtraImport": true,
+        "detail": "numpy.linalg",
+        "documentation": {}
+    },
+    {
+        "label": "inv",
+        "importPath": "numpy.linalg",
+        "description": "numpy.linalg",
+        "isExtraImport": true,
+        "detail": "numpy.linalg",
+        "documentation": {}
+    },
+    {
+        "label": "BaseOptions",
+        "importPath": "lib.options",
+        "description": "lib.options",
+        "isExtraImport": true,
+        "detail": "lib.options",
+        "documentation": {}
+    },
+    {
+        "label": "save_obj_mesh_with_color",
+        "importPath": "lib.mesh_util",
+        "description": "lib.mesh_util",
+        "isExtraImport": true,
+        "detail": "lib.mesh_util",
+        "documentation": {}
+    },
+    {
+        "label": "reconstruction",
+        "importPath": "lib.mesh_util",
+        "description": "lib.mesh_util",
+        "isExtraImport": true,
+        "detail": "lib.mesh_util",
+        "documentation": {}
+    },
+    {
+        "label": "EvalWPoseDataset",
+        "importPath": "lib.data",
+        "description": "lib.data",
+        "isExtraImport": true,
+        "detail": "lib.data",
+        "documentation": {}
+    },
+    {
+        "label": "EvalDataset",
+        "importPath": "lib.data",
+        "description": "lib.data",
+        "isExtraImport": true,
+        "detail": "lib.data",
+        "documentation": {}
+    },
+    {
+        "label": "HGPIFuNetwNML",
+        "importPath": "lib.model",
+        "description": "lib.model",
+        "isExtraImport": true,
+        "detail": "lib.model",
+        "documentation": {}
+    },
+    {
+        "label": "HGPIFuMRNet",
+        "importPath": "lib.model",
+        "description": "lib.model",
+        "isExtraImport": true,
+        "detail": "lib.model",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "importPath": "lib.geometry",
+        "description": "lib.geometry",
+        "isExtraImport": true,
+        "detail": "lib.geometry",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "load_obj_mesh",
+        "importPath": "lib.render.mesh",
+        "description": "lib.render.mesh",
+        "isExtraImport": true,
+        "detail": "lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "compute_normal",
+        "importPath": "lib.render.mesh",
+        "description": "lib.render.mesh",
+        "isExtraImport": true,
+        "detail": "lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "Camera",
+        "importPath": "lib.render.camera",
+        "description": "lib.render.camera",
+        "isExtraImport": true,
+        "detail": "lib.render.camera",
+        "documentation": {}
+    },
+    {
+        "label": "GeoRender",
+        "importPath": "lib.render.gl.geo_render",
+        "description": "lib.render.gl.geo_render",
+        "isExtraImport": true,
+        "detail": "lib.render.gl.geo_render",
+        "documentation": {}
+    },
+    {
+        "label": "ColorRender",
+        "importPath": "lib.render.gl.color_render",
+        "description": "lib.render.gl.color_render",
+        "isExtraImport": true,
+        "detail": "lib.render.gl.color_render",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianBlur",
+        "importPath": "PIL.ImageFilter",
+        "description": "PIL.ImageFilter",
+        "isExtraImport": true,
+        "detail": "PIL.ImageFilter",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianBlur",
+        "importPath": "PIL.ImageFilter",
+        "description": "PIL.ImageFilter",
+        "isExtraImport": true,
+        "detail": "PIL.ImageFilter",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision.transforms",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision.transforms",
+        "description": "torchvision.transforms",
+        "detail": "torchvision.transforms",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "OpenGL.GLUT",
+        "description": "OpenGL.GLUT",
+        "isExtraImport": true,
+        "detail": "OpenGL.GLUT",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "OpenGL.GLUT",
+        "description": "OpenGL.GLUT",
+        "isExtraImport": true,
+        "detail": "OpenGL.GLUT",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "OpenGL.GL",
+        "description": "OpenGL.GL",
+        "isExtraImport": true,
+        "detail": "OpenGL.GL",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "imread",
+        "importPath": "skimage.io",
+        "description": "skimage.io",
+        "isExtraImport": true,
+        "detail": "skimage.io",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "b64encode",
+        "importPath": "base64",
+        "description": "base64",
+        "isExtraImport": true,
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "HTML",
+        "importPath": "IPython.display",
+        "description": "IPython.display",
+        "isExtraImport": true,
+        "detail": "IPython.display",
+        "documentation": {}
+    },
+    {
+        "label": "HTML",
+        "importPath": "IPython.display",
+        "description": "IPython.display",
+        "isExtraImport": true,
+        "detail": "IPython.display",
+        "documentation": {}
+    },
+    {
+        "label": "load_objs_as_meshes",
+        "importPath": "pytorch3d.io",
+        "description": "pytorch3d.io",
+        "isExtraImport": true,
+        "detail": "pytorch3d.io",
+        "documentation": {}
+    },
+    {
+        "label": "Meshes",
+        "importPath": "pytorch3d.structures",
+        "description": "pytorch3d.structures",
+        "isExtraImport": true,
+        "detail": "pytorch3d.structures",
+        "documentation": {}
+    },
+    {
+        "label": "look_at_view_transform",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "OpenGLOrthographicCameras",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "PointLights",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "DirectionalLights",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "Materials",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "RasterizationSettings",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "MeshRenderer",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "MeshRasterizer",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "HardPhongShader",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "TexturesVertex",
+        "importPath": "pytorch3d.renderer",
+        "description": "pytorch3d.renderer",
+        "isExtraImport": true,
+        "detail": "pytorch3d.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "trimesh.proximity",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "trimesh.proximity",
+        "description": "trimesh.proximity",
+        "detail": "trimesh.proximity",
+        "documentation": {}
+    },
+    {
+        "label": "trimesh.sample",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "trimesh.sample",
+        "description": "trimesh.sample",
+        "detail": "trimesh.sample",
+        "documentation": {}
+    },
+    {
+        "label": "measure",
+        "importPath": "skimage",
+        "description": "skimage",
+        "isExtraImport": true,
+        "detail": "skimage",
+        "documentation": {}
+    },
+    {
+        "label": "measure",
+        "importPath": "skimage",
+        "description": "skimage",
+        "isExtraImport": true,
+        "detail": "skimage",
+        "documentation": {}
+    },
+    {
+        "label": "functools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "functools",
+        "description": "functools",
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "Variable",
+        "importPath": "torch.autograd",
+        "description": "torch.autograd",
+        "isExtraImport": true,
+        "detail": "torch.autograd",
+        "documentation": {}
+    },
+    {
         "label": "avatar",
         "kind": 5,
         "importPath": "allscripts.20days_scripts.day2.creating_avatars",
@@ -626,6 +1187,51 @@
         "description": "allscripts.20days_scripts.dayone",
         "peekOfCode": "image = Image.open('avatar.png')\nst.image(image)\nst.download_button(label='Download Avatar',\n                   data=open('avatar.png', 'rb').read(),\n                   file_name='avatar.png',\n                   mime='image/png')",
         "detail": "allscripts.20days_scripts.dayone",
+        "documentation": {}
+    },
+    {
+        "label": "convert_to_3d_avatar",
+        "kind": 2,
+        "importPath": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "description": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "peekOfCode": "def convert_to_3d_avatar(image_path):\n    # Placeholder for actual conversion code using TensorFlow or other libraries\n    # This could involve loading a pre-trained model and processing the image\n    # For demonstration, let's just return a placeholder 3D array\n    return np.zeros((128, 128, 128, 3))  # Placeholder 3D array\n# Convert PNG image to 3D avatar\navatar_image = convert_to_3d_avatar(user_image_path)\n# Pseudo code step 3: Apply realism\n# Function to apply realism to the 3D avatar\ndef apply_realism(avatar_image):",
+        "detail": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "documentation": {}
+    },
+    {
+        "label": "apply_realism",
+        "kind": 2,
+        "importPath": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "description": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "peekOfCode": "def apply_realism(avatar_image):\n    # Placeholder for adding realism\n    # This could involve texture mapping, lighting effects, etc.\n    # For demonstration, let's just return the same avatar image\n    return avatar_image\n# Apply realism to the 3D avatar\nrealistic_avatar = apply_realism(avatar_image)\n# Display the original and realistic avatar\nplt.figure(figsize=(10, 5))\nplt.subplot(1, 2, 1)",
+        "detail": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "documentation": {}
+    },
+    {
+        "label": "user_image_path",
+        "kind": 5,
+        "importPath": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "description": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "peekOfCode": "user_image_path = 'allscripts/nigerianguy.jpeg'\n# Pseudo code step 2: Convert it to 3D avatar image\n# Function to convert PNG image to 3D avatar\ndef convert_to_3d_avatar(image_path):\n    # Placeholder for actual conversion code using TensorFlow or other libraries\n    # This could involve loading a pre-trained model and processing the image\n    # For demonstration, let's just return a placeholder 3D array\n    return np.zeros((128, 128, 128, 3))  # Placeholder 3D array\n# Convert PNG image to 3D avatar\navatar_image = convert_to_3d_avatar(user_image_path)",
+        "detail": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "documentation": {}
+    },
+    {
+        "label": "avatar_image",
+        "kind": 5,
+        "importPath": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "description": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "peekOfCode": "avatar_image = convert_to_3d_avatar(user_image_path)\n# Pseudo code step 3: Apply realism\n# Function to apply realism to the 3D avatar\ndef apply_realism(avatar_image):\n    # Placeholder for adding realism\n    # This could involve texture mapping, lighting effects, etc.\n    # For demonstration, let's just return the same avatar image\n    return avatar_image\n# Apply realism to the 3D avatar\nrealistic_avatar = apply_realism(avatar_image)",
+        "detail": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "documentation": {}
+    },
+    {
+        "label": "realistic_avatar",
+        "kind": 5,
+        "importPath": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "description": "allscripts.dailyscripts.1st_April.convert2dto3d",
+        "peekOfCode": "realistic_avatar = apply_realism(avatar_image)\n# Display the original and realistic avatar\nplt.figure(figsize=(10, 5))\nplt.subplot(1, 2, 1)\nplt.title('Original Avatar')\nplt.imshow(avatar_image)\nplt.axis('off')\nplt.subplot(1, 2, 2)\nplt.title('Realistic Avatar')\nplt.imshow(realistic_avatar)",
+        "detail": "allscripts.dailyscripts.1st_April.convert2dto3d",
         "documentation": {}
     },
     {
@@ -903,7 +1509,7 @@
         "kind": 5,
         "importPath": "avatar_colab.urls",
         "description": "avatar_colab.urls",
-        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Avatar_Colab Model\",\n      default_version='v1',\n      description=\"Ai Avatar Generator App Documentation\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"kezechristian@gmail.com\"),\n      license=openapi.License(name=\"Mechrecommender licence\"),\n   ),\n   public=True,",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Avatar_Colab Model\",\n      default_version='v1',\n      description=\"Ai Avatar Generator App Documentation\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"kezechristian@gmail.com\"),\n      license=openapi.License(name=\"Avatar_Colab licence\"),\n   ),\n   public=True,",
         "detail": "avatar_colab.urls",
         "documentation": {}
     },
@@ -923,6 +1529,1023 @@
         "description": "avatar_colab.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "avatar_colab.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "pifuhd.apps.batch_openpose",
+        "description": "pifuhd.apps.batch_openpose",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('-d', '--openpose_dir', type=str, required=True)\nparser.add_argument('-i', '--input_root', type=str, required=True)\nparser.add_argument('-o', '--out_path', type=str, required=True)\nargs = parser.parse_args()\nop_dir = args.openpose_dir\ninput_path = args.input_root\nout_json_path = args.out_path\nos.makedirs(out_json_path, exist_ok=True)\ncmd = \"cd {0}; ./build/examples/openpose/openpose.bin --image_dir {1} --write_json {2} --render_pose 2 --face --face_render 2 --hand --hand_render 2\".format(op_dir, input_path, out_json_path)",
+        "detail": "pifuhd.apps.batch_openpose",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "pifuhd.apps.batch_openpose",
+        "description": "pifuhd.apps.batch_openpose",
+        "peekOfCode": "args = parser.parse_args()\nop_dir = args.openpose_dir\ninput_path = args.input_root\nout_json_path = args.out_path\nos.makedirs(out_json_path, exist_ok=True)\ncmd = \"cd {0}; ./build/examples/openpose/openpose.bin --image_dir {1} --write_json {2} --render_pose 2 --face --face_render 2 --hand --hand_render 2\".format(op_dir, input_path, out_json_path)\nprint(cmd)\nos.system(cmd)",
+        "detail": "pifuhd.apps.batch_openpose",
+        "documentation": {}
+    },
+    {
+        "label": "op_dir",
+        "kind": 5,
+        "importPath": "pifuhd.apps.batch_openpose",
+        "description": "pifuhd.apps.batch_openpose",
+        "peekOfCode": "op_dir = args.openpose_dir\ninput_path = args.input_root\nout_json_path = args.out_path\nos.makedirs(out_json_path, exist_ok=True)\ncmd = \"cd {0}; ./build/examples/openpose/openpose.bin --image_dir {1} --write_json {2} --render_pose 2 --face --face_render 2 --hand --hand_render 2\".format(op_dir, input_path, out_json_path)\nprint(cmd)\nos.system(cmd)",
+        "detail": "pifuhd.apps.batch_openpose",
+        "documentation": {}
+    },
+    {
+        "label": "input_path",
+        "kind": 5,
+        "importPath": "pifuhd.apps.batch_openpose",
+        "description": "pifuhd.apps.batch_openpose",
+        "peekOfCode": "input_path = args.input_root\nout_json_path = args.out_path\nos.makedirs(out_json_path, exist_ok=True)\ncmd = \"cd {0}; ./build/examples/openpose/openpose.bin --image_dir {1} --write_json {2} --render_pose 2 --face --face_render 2 --hand --hand_render 2\".format(op_dir, input_path, out_json_path)\nprint(cmd)\nos.system(cmd)",
+        "detail": "pifuhd.apps.batch_openpose",
+        "documentation": {}
+    },
+    {
+        "label": "out_json_path",
+        "kind": 5,
+        "importPath": "pifuhd.apps.batch_openpose",
+        "description": "pifuhd.apps.batch_openpose",
+        "peekOfCode": "out_json_path = args.out_path\nos.makedirs(out_json_path, exist_ok=True)\ncmd = \"cd {0}; ./build/examples/openpose/openpose.bin --image_dir {1} --write_json {2} --render_pose 2 --face --face_render 2 --hand --hand_render 2\".format(op_dir, input_path, out_json_path)\nprint(cmd)\nos.system(cmd)",
+        "detail": "pifuhd.apps.batch_openpose",
+        "documentation": {}
+    },
+    {
+        "label": "cmd",
+        "kind": 5,
+        "importPath": "pifuhd.apps.batch_openpose",
+        "description": "pifuhd.apps.batch_openpose",
+        "peekOfCode": "cmd = \"cd {0}; ./build/examples/openpose/openpose.bin --image_dir {1} --write_json {2} --render_pose 2 --face --face_render 2 --hand --hand_render 2\".format(op_dir, input_path, out_json_path)\nprint(cmd)\nos.system(cmd)",
+        "detail": "pifuhd.apps.batch_openpose",
+        "documentation": {}
+    },
+    {
+        "label": "meshcleaning",
+        "kind": 2,
+        "importPath": "pifuhd.apps.clean_mesh",
+        "description": "pifuhd.apps.clean_mesh",
+        "peekOfCode": "def meshcleaning(file_dir):\n    files = sorted([f for f in os.listdir(file_dir) if '.obj' in f])\n    for i, file in enumerate(files):\n        obj_path = os.path.join(file_dir, file)\n        print(f\"Processing: {obj_path}\")\n        mesh = trimesh.load(obj_path)\n        cc = mesh.split(only_watertight=False)    \n        out_mesh = cc[0]\n        bbox = out_mesh.bounds\n        height = bbox[1,0] - bbox[0,0]",
+        "detail": "pifuhd.apps.clean_mesh",
+        "documentation": {}
+    },
+    {
+        "label": "gen_mesh",
+        "kind": 2,
+        "importPath": "pifuhd.apps.recon",
+        "description": "pifuhd.apps.recon",
+        "peekOfCode": "def gen_mesh(res, net, cuda, data, save_path, thresh=0.5, use_octree=True, components=False):\n    image_tensor_global = data['img_512'].to(device=cuda)\n    image_tensor = data['img'].to(device=cuda)\n    calib_tensor = data['calib'].to(device=cuda)\n    net.filter_global(image_tensor_global)\n    net.filter_local(image_tensor[:,None])\n    try:\n        if net.netG.netF is not None:\n            image_tensor_global = torch.cat([image_tensor_global, net.netG.nmlF], 0)\n        if net.netG.netB is not None:",
+        "detail": "pifuhd.apps.recon",
+        "documentation": {}
+    },
+    {
+        "label": "gen_mesh_imgColor",
+        "kind": 2,
+        "importPath": "pifuhd.apps.recon",
+        "description": "pifuhd.apps.recon",
+        "peekOfCode": "def gen_mesh_imgColor(res, net, cuda, data, save_path, thresh=0.5, use_octree=True, components=False):\n    image_tensor_global = data['img_512'].to(device=cuda)\n    image_tensor = data['img'].to(device=cuda)\n    calib_tensor = data['calib'].to(device=cuda)\n    net.filter_global(image_tensor_global)\n    net.filter_local(image_tensor[:,None])\n    try:\n        if net.netG.netF is not None:\n            image_tensor_global = torch.cat([image_tensor_global, net.netG.nmlF], 0)\n        if net.netG.netB is not None:",
+        "detail": "pifuhd.apps.recon",
+        "documentation": {}
+    },
+    {
+        "label": "recon",
+        "kind": 2,
+        "importPath": "pifuhd.apps.recon",
+        "description": "pifuhd.apps.recon",
+        "peekOfCode": "def recon(opt, use_rect=False):\n    # load checkpoints\n    state_dict_path = None\n    if opt.load_netMR_checkpoint_path is not None:\n        state_dict_path = opt.load_netMR_checkpoint_path\n    elif opt.resume_epoch < 0:\n        state_dict_path = '%s/%s_train_latest' % (opt.checkpoints_path, opt.name)\n        opt.resume_epoch = 0\n    else:\n        state_dict_path = '%s/%s_train_epoch_%d' % (opt.checkpoints_path, opt.name, opt.resume_epoch)",
+        "detail": "pifuhd.apps.recon",
+        "documentation": {}
+    },
+    {
+        "label": "reconWrapper",
+        "kind": 2,
+        "importPath": "pifuhd.apps.recon",
+        "description": "pifuhd.apps.recon",
+        "peekOfCode": "def reconWrapper(args=None, use_rect=False):\n    opt = parser.parse(args)\n    recon(opt, use_rect)\nif __name__ == '__main__':\n    reconWrapper()",
+        "detail": "pifuhd.apps.recon",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_PATH",
+        "kind": 5,
+        "importPath": "pifuhd.apps.recon",
+        "description": "pifuhd.apps.recon",
+        "peekOfCode": "ROOT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nimport time\nimport json \nimport numpy as np\nimport cv2\nimport random\nimport torch\nimport torch.nn as nn\nfrom tqdm import tqdm\nfrom torch.utils.data import DataLoader",
+        "detail": "pifuhd.apps.recon",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "pifuhd.apps.recon",
+        "description": "pifuhd.apps.recon",
+        "peekOfCode": "parser = BaseOptions()\ndef gen_mesh(res, net, cuda, data, save_path, thresh=0.5, use_octree=True, components=False):\n    image_tensor_global = data['img_512'].to(device=cuda)\n    image_tensor = data['img'].to(device=cuda)\n    calib_tensor = data['calib'].to(device=cuda)\n    net.filter_global(image_tensor_global)\n    net.filter_local(image_tensor[:,None])\n    try:\n        if net.netG.netF is not None:\n            image_tensor_global = torch.cat([image_tensor_global, net.netG.nmlF], 0)",
+        "detail": "pifuhd.apps.recon",
+        "documentation": {}
+    },
+    {
+        "label": "make_rotate",
+        "kind": 2,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "def make_rotate(rx, ry, rz):\n    sinX = np.sin(rx)\n    sinY = np.sin(ry)\n    sinZ = np.sin(rz)\n    cosX = np.cos(rx)\n    cosY = np.cos(ry)\n    cosZ = np.cos(rz)\n    Rx = np.zeros((3,3))\n    Rx[0, 0] = 1.0\n    Rx[1, 1] = cosX",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_PATH",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "ROOT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nfrom lib.render.mesh import load_obj_mesh, compute_normal\nfrom lib.render.camera import Camera\nfrom lib.render.gl.geo_render import GeoRender\nfrom lib.render.gl.color_render import ColorRender\nimport trimesh\nimport cv2\nimport os\nimport argparse\nwidth = 512",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "width",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "width = 512\nheight = 512\ndef make_rotate(rx, ry, rz):\n    sinX = np.sin(rx)\n    sinY = np.sin(ry)\n    sinZ = np.sin(rz)\n    cosX = np.cos(rx)\n    cosY = np.cos(ry)\n    cosZ = np.cos(rz)\n    Rx = np.zeros((3,3))",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "height",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "height = 512\ndef make_rotate(rx, ry, rz):\n    sinX = np.sin(rx)\n    sinY = np.sin(ry)\n    sinZ = np.sin(rz)\n    cosX = np.cos(rx)\n    cosY = np.cos(ry)\n    cosZ = np.cos(rz)\n    Rx = np.zeros((3,3))\n    Rx[0, 0] = 1.0",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('-f', '--file_dir', type=str, required=True)\nparser.add_argument('-ww', '--width', type=int, default=512)\nparser.add_argument('-hh', '--height', type=int, default=512)\nparser.add_argument('-g', '--geo_render', action='store_true', help='default is normal rendering')\nargs = parser.parse_args()\nif args.geo_render:\n    renderer = GeoRender(width=args.width, height=args.height)\nelse:\n    renderer = ColorRender(width=args.width, height=args.height)",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "args = parser.parse_args()\nif args.geo_render:\n    renderer = GeoRender(width=args.width, height=args.height)\nelse:\n    renderer = ColorRender(width=args.width, height=args.height)\ncam = Camera(width=1.0, height=args.height/args.width)\ncam.ortho_ratio = 1.2\ncam.near = -100\ncam.far = 10\nobj_files = []",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "cam",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "cam = Camera(width=1.0, height=args.height/args.width)\ncam.ortho_ratio = 1.2\ncam.near = -100\ncam.far = 10\nobj_files = []\nfor (root,dirs,files) in os.walk(args.file_dir, topdown=True): \n    for file in files:\n        if '.obj' in file:\n            obj_files.append(os.path.join(root, file))\nprint(obj_files)",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "cam.ortho_ratio",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "cam.ortho_ratio = 1.2\ncam.near = -100\ncam.far = 10\nobj_files = []\nfor (root,dirs,files) in os.walk(args.file_dir, topdown=True): \n    for file in files:\n        if '.obj' in file:\n            obj_files.append(os.path.join(root, file))\nprint(obj_files)\nR = make_rotate(math.radians(180),0,0)",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "cam.near",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "cam.near = -100\ncam.far = 10\nobj_files = []\nfor (root,dirs,files) in os.walk(args.file_dir, topdown=True): \n    for file in files:\n        if '.obj' in file:\n            obj_files.append(os.path.join(root, file))\nprint(obj_files)\nR = make_rotate(math.radians(180),0,0)\nfor i, obj_path in enumerate(obj_files):",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "cam.far",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "cam.far = 10\nobj_files = []\nfor (root,dirs,files) in os.walk(args.file_dir, topdown=True): \n    for file in files:\n        if '.obj' in file:\n            obj_files.append(os.path.join(root, file))\nprint(obj_files)\nR = make_rotate(math.radians(180),0,0)\nfor i, obj_path in enumerate(obj_files):\n    print(obj_path)",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "obj_files",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "obj_files = []\nfor (root,dirs,files) in os.walk(args.file_dir, topdown=True): \n    for file in files:\n        if '.obj' in file:\n            obj_files.append(os.path.join(root, file))\nprint(obj_files)\nR = make_rotate(math.radians(180),0,0)\nfor i, obj_path in enumerate(obj_files):\n    print(obj_path)\n    obj_file = obj_path.split('/')[-1]",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "R",
+        "kind": 5,
+        "importPath": "pifuhd.apps.render_turntable",
+        "description": "pifuhd.apps.render_turntable",
+        "peekOfCode": "R = make_rotate(math.radians(180),0,0)\nfor i, obj_path in enumerate(obj_files):\n    print(obj_path)\n    obj_file = obj_path.split('/')[-1]\n    obj_root = obj_path.replace(obj_file,'')\n    file_name = obj_file[:-4]\n    if not os.path.exists(obj_path):\n        continue    \n    mesh = trimesh.load(obj_path)\n    vertices = mesh.vertices",
+        "detail": "pifuhd.apps.render_turntable",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "pifuhd.apps.simple_test",
+        "description": "pifuhd.apps.simple_test",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('-i', '--input_path', type=str, default='./sample_images')\nparser.add_argument('-o', '--out_path', type=str, default='./results')\nparser.add_argument('-c', '--ckpt_path', type=str, default='./checkpoints/pifuhd.pt')\nparser.add_argument('-r', '--resolution', type=int, default=512)\nparser.add_argument('--use_rect', action='store_true', help='use rectangle for cropping')\nargs = parser.parse_args()\n###############################################################################################\n##                   Upper PIFu\n###############################################################################################",
+        "detail": "pifuhd.apps.simple_test",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "pifuhd.apps.simple_test",
+        "description": "pifuhd.apps.simple_test",
+        "peekOfCode": "args = parser.parse_args()\n###############################################################################################\n##                   Upper PIFu\n###############################################################################################\nresolution = str(args.resolution)\nstart_id = -1\nend_id = -1\ncmd = ['--dataroot', args.input_path, '--results_path', args.out_path,\\\n       '--loadSize', '1024', '--resolution', resolution, '--load_netMR_checkpoint_path', \\\n       args.ckpt_path,\\",
+        "detail": "pifuhd.apps.simple_test",
+        "documentation": {}
+    },
+    {
+        "label": "resolution",
+        "kind": 5,
+        "importPath": "pifuhd.apps.simple_test",
+        "description": "pifuhd.apps.simple_test",
+        "peekOfCode": "resolution = str(args.resolution)\nstart_id = -1\nend_id = -1\ncmd = ['--dataroot', args.input_path, '--results_path', args.out_path,\\\n       '--loadSize', '1024', '--resolution', resolution, '--load_netMR_checkpoint_path', \\\n       args.ckpt_path,\\\n       '--start_id', '%d' % start_id, '--end_id', '%d' % end_id]\nreconWrapper(cmd, args.use_rect)",
+        "detail": "pifuhd.apps.simple_test",
+        "documentation": {}
+    },
+    {
+        "label": "start_id",
+        "kind": 5,
+        "importPath": "pifuhd.apps.simple_test",
+        "description": "pifuhd.apps.simple_test",
+        "peekOfCode": "start_id = -1\nend_id = -1\ncmd = ['--dataroot', args.input_path, '--results_path', args.out_path,\\\n       '--loadSize', '1024', '--resolution', resolution, '--load_netMR_checkpoint_path', \\\n       args.ckpt_path,\\\n       '--start_id', '%d' % start_id, '--end_id', '%d' % end_id]\nreconWrapper(cmd, args.use_rect)",
+        "detail": "pifuhd.apps.simple_test",
+        "documentation": {}
+    },
+    {
+        "label": "end_id",
+        "kind": 5,
+        "importPath": "pifuhd.apps.simple_test",
+        "description": "pifuhd.apps.simple_test",
+        "peekOfCode": "end_id = -1\ncmd = ['--dataroot', args.input_path, '--results_path', args.out_path,\\\n       '--loadSize', '1024', '--resolution', resolution, '--load_netMR_checkpoint_path', \\\n       args.ckpt_path,\\\n       '--start_id', '%d' % start_id, '--end_id', '%d' % end_id]\nreconWrapper(cmd, args.use_rect)",
+        "detail": "pifuhd.apps.simple_test",
+        "documentation": {}
+    },
+    {
+        "label": "cmd",
+        "kind": 5,
+        "importPath": "pifuhd.apps.simple_test",
+        "description": "pifuhd.apps.simple_test",
+        "peekOfCode": "cmd = ['--dataroot', args.input_path, '--results_path', args.out_path,\\\n       '--loadSize', '1024', '--resolution', resolution, '--load_netMR_checkpoint_path', \\\n       args.ckpt_path,\\\n       '--start_id', '%d' % start_id, '--end_id', '%d' % end_id]\nreconWrapper(cmd, args.use_rect)",
+        "detail": "pifuhd.apps.simple_test",
+        "documentation": {}
+    },
+    {
+        "label": "EvalDataset",
+        "kind": 6,
+        "importPath": "pifuhd.lib.data.EvalDataset",
+        "description": "pifuhd.lib.data.EvalDataset",
+        "peekOfCode": "class EvalDataset(Dataset):\n    @staticmethod\n    def modify_commandline_options(parser, is_train):\n        return parser\n    def __init__(self, opt, projection='orthogonal'):\n        self.opt = opt\n        self.projection_mode = projection\n        self.root = self.opt.dataroot\n        self.img_files = sorted([os.path.join(self.root,f) for f in os.listdir(self.root) if f.split('.')[-1] in ['png', 'jpeg', 'jpg', 'PNG', 'JPG', 'JPEG'] and os.path.exists(os.path.join(self.root,f.replace('.%s' % (f.split('.')[-1]), '_rect.txt')))])\n        self.IMG = os.path.join(self.root)",
+        "detail": "pifuhd.lib.data.EvalDataset",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "kind": 2,
+        "importPath": "pifuhd.lib.data.EvalDataset",
+        "description": "pifuhd.lib.data.EvalDataset",
+        "peekOfCode": "def crop_image(img, rect):\n    x, y, w, h = rect\n    left = abs(x) if x < 0 else 0\n    top = abs(y) if y < 0 else 0\n    right = abs(img.shape[1]-(x+w)) if x + w >= img.shape[1] else 0\n    bottom = abs(img.shape[0]-(y+h)) if y + h >= img.shape[0] else 0\n    if img.shape[2] == 4:\n        color = [0, 0, 0, 0]\n    else:\n        color = [0, 0, 0]",
+        "detail": "pifuhd.lib.data.EvalDataset",
+        "documentation": {}
+    },
+    {
+        "label": "EvalWPoseDataset",
+        "kind": 6,
+        "importPath": "pifuhd.lib.data.EvalWPoseDataset",
+        "description": "pifuhd.lib.data.EvalWPoseDataset",
+        "peekOfCode": "class EvalWPoseDataset(Dataset):\n    @staticmethod\n    def modify_commandline_options(parser, is_train):\n        return parser\n    def __init__(self, opt, projection='orthogonal'):\n        self.opt = opt\n        self.projection_mode = projection\n        self.root = self.opt.dataroot\n        self.img_files = sorted([os.path.join(self.root,f) for f in os.listdir(self.root) if f.split('.')[-1] in ['png', 'jpeg', 'jpg', 'PNG', 'JPG', 'JPEG'] and os.path.exists(os.path.join(self.root,f.replace('.%s' % (f.split('.')[-1]), '_keypoints.json')))])\n        self.IMG = os.path.join(self.root)",
+        "detail": "pifuhd.lib.data.EvalWPoseDataset",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "kind": 2,
+        "importPath": "pifuhd.lib.data.EvalWPoseDataset",
+        "description": "pifuhd.lib.data.EvalWPoseDataset",
+        "peekOfCode": "def crop_image(img, rect):\n    x, y, w, h = rect\n    left = abs(x) if x < 0 else 0\n    top = abs(y) if y < 0 else 0\n    right = abs(img.shape[1]-(x+w)) if x + w >= img.shape[1] else 0\n    bottom = abs(img.shape[0]-(y+h)) if y + h >= img.shape[0] else 0\n    if img.shape[2] == 4:\n        color = [0, 0, 0, 0]\n    else:\n        color = [0, 0, 0]",
+        "detail": "pifuhd.lib.data.EvalWPoseDataset",
+        "documentation": {}
+    },
+    {
+        "label": "face_crop",
+        "kind": 2,
+        "importPath": "pifuhd.lib.data.EvalWPoseDataset",
+        "description": "pifuhd.lib.data.EvalWPoseDataset",
+        "peekOfCode": "def face_crop(pts):\n    flag = pts[:,2] > 0.2\n    mshoulder = pts[1,:2]\n    rear = pts[18,:2]\n    lear = pts[17,:2]\n    nose = pts[0,:2]\n    center = np.copy(mshoulder)\n    center[1] = min(nose[1] if flag[0] else 1e8, lear[1] if flag[17] else 1e8, rear[1] if flag[18] else 1e8)\n    ps = []\n    pts_id = [0, 15, 16, 17, 18]",
+        "detail": "pifuhd.lib.data.EvalWPoseDataset",
+        "documentation": {}
+    },
+    {
+        "label": "upperbody_crop",
+        "kind": 2,
+        "importPath": "pifuhd.lib.data.EvalWPoseDataset",
+        "description": "pifuhd.lib.data.EvalWPoseDataset",
+        "peekOfCode": "def upperbody_crop(pts):\n    flag = pts[:,2] > 0.2\n    mshoulder = pts[1,:2]\n    ps = []\n    pts_id = [8]\n    for i in pts_id:\n        if flag[i]:\n            ps.append(pts[i,:2])\n    center = mshoulder\n    if len(ps) == 1:",
+        "detail": "pifuhd.lib.data.EvalWPoseDataset",
+        "documentation": {}
+    },
+    {
+        "label": "fullbody_crop",
+        "kind": 2,
+        "importPath": "pifuhd.lib.data.EvalWPoseDataset",
+        "description": "pifuhd.lib.data.EvalWPoseDataset",
+        "peekOfCode": "def fullbody_crop(pts):\n    flags = pts[:,2] > 0.5      #openpose\n    # flags = pts[:,2] > 0.2  #detectron\n    check_id = [11,19,21,22]\n    cnt = sum(flags[check_id])\n    if cnt == 0:\n        center = pts[8,:2].astype(np.int)\n        pts = pts[pts[:,2] > 0.5][:,:2]\n        radius = int(1.45*np.sqrt(((center[None,:] - pts)**2).sum(1)).max(0))\n        center[1] += int(0.05*radius)",
+        "detail": "pifuhd.lib.data.EvalWPoseDataset",
+        "documentation": {}
+    },
+    {
+        "label": "BasePIFuNet",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.BasePIFuNet",
+        "description": "pifuhd.lib.model.BasePIFuNet",
+        "peekOfCode": "class BasePIFuNet(nn.Module):\n    def __init__(self,\n                 projection_mode='orthogonal',\n                 criteria={'occ': nn.MSELoss()},\n                 ):\n        '''\n        args:\n            projection_mode: orthonal / perspective\n            error_term: point-wise error term \n        '''",
+        "detail": "pifuhd.lib.model.BasePIFuNet",
+        "documentation": {}
+    },
+    {
+        "label": "DepthNormalizer",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.DepthNormalizer",
+        "description": "pifuhd.lib.model.DepthNormalizer",
+        "peekOfCode": "class DepthNormalizer(nn.Module):\n    def __init__(self, opt):\n        super(DepthNormalizer, self).__init__()\n        self.opt = opt\n    def forward(self, xyz, calibs=None, index_feat=None):\n        '''\n        normalize depth value\n        args:\n            xyz: [B, 3, N] depth value\n        '''",
+        "detail": "pifuhd.lib.model.DepthNormalizer",
+        "documentation": {}
+    },
+    {
+        "label": "ConvBlock",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.HGFilters",
+        "description": "pifuhd.lib.model.HGFilters",
+        "peekOfCode": "class ConvBlock(nn.Module):\n    def __init__(self, in_planes, out_planes, norm='batch'):\n        super(ConvBlock, self).__init__()\n        self.conv1 = conv3x3(in_planes, int(out_planes / 2))\n        self.conv2 = conv3x3(int(out_planes / 2), int(out_planes / 4))\n        self.conv3 = conv3x3(int(out_planes / 4), int(out_planes / 4))\n        if norm == 'batch':\n            self.bn1 = nn.BatchNorm2d(in_planes)\n            self.bn2 = nn.BatchNorm2d(int(out_planes / 2))\n            self.bn3 = nn.BatchNorm2d(int(out_planes / 4))",
+        "detail": "pifuhd.lib.model.HGFilters",
+        "documentation": {}
+    },
+    {
+        "label": "HourGlass",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.HGFilters",
+        "description": "pifuhd.lib.model.HGFilters",
+        "peekOfCode": "class HourGlass(nn.Module):\n    def __init__(self, depth, n_features, norm='batch'):\n        super(HourGlass, self).__init__()\n        self.depth = depth\n        self.features = n_features\n        self.norm = norm\n        self._generate_network(self.depth)\n    def _generate_network(self, level):\n        self.add_module('b1_' + str(level), ConvBlock(self.features, self.features, norm=self.norm))\n        self.add_module('b2_' + str(level), ConvBlock(self.features, self.features, norm=self.norm))",
+        "detail": "pifuhd.lib.model.HGFilters",
+        "documentation": {}
+    },
+    {
+        "label": "HGFilter",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.HGFilters",
+        "description": "pifuhd.lib.model.HGFilters",
+        "peekOfCode": "class HGFilter(nn.Module):\n    def __init__(self, stack, depth, in_ch, last_ch, norm='batch', down_type='conv64', use_sigmoid=True):\n        super(HGFilter, self).__init__()\n        self.n_stack = stack\n        self.use_sigmoid = use_sigmoid\n        self.depth = depth\n        self.last_ch = last_ch\n        self.norm = norm\n        self.down_type = down_type\n        self.conv1 = nn.Conv2d(in_ch, 64, kernel_size=7, stride=2, padding=3)",
+        "detail": "pifuhd.lib.model.HGFilters",
+        "documentation": {}
+    },
+    {
+        "label": "HGPIFuMRNet",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.HGPIFuMRNet",
+        "description": "pifuhd.lib.model.HGPIFuMRNet",
+        "peekOfCode": "class HGPIFuMRNet(BasePIFuNet):\n    '''\n    HGPIFu uses stacked hourglass as an image encoder.\n    '''\n    def __init__(self, \n                 opt, \n                 netG,\n                 projection_mode='orthogonal',\n                 criteria={'occ': nn.MSELoss()}\n                 ):",
+        "detail": "pifuhd.lib.model.HGPIFuMRNet",
+        "documentation": {}
+    },
+    {
+        "label": "HGPIFuNetwNML",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.HGPIFuNetwNML",
+        "description": "pifuhd.lib.model.HGPIFuNetwNML",
+        "peekOfCode": "class HGPIFuNetwNML(BasePIFuNet):\n    '''\n    HGPIFu uses stacked hourglass as an image encoder.\n    '''\n    def __init__(self, \n                 opt, \n                 projection_mode='orthogonal',\n                 criteria={'occ': nn.MSELoss()}\n                 ):\n        super(HGPIFuNetwNML, self).__init__(",
+        "detail": "pifuhd.lib.model.HGPIFuNetwNML",
+        "documentation": {}
+    },
+    {
+        "label": "MLP",
+        "kind": 6,
+        "importPath": "pifuhd.lib.model.MLP",
+        "description": "pifuhd.lib.model.MLP",
+        "peekOfCode": "class MLP(nn.Module):\n    def __init__(self, \n                 filter_channels, \n                 merge_layer=0,\n                 res_layers=[],\n                 norm='group',\n                 last_op=None):\n        super(MLP, self).__init__()\n        self.filters = nn.ModuleList()\n        self.norms = nn.ModuleList()",
+        "detail": "pifuhd.lib.model.MLP",
+        "documentation": {}
+    },
+    {
+        "label": "CamRender",
+        "kind": 6,
+        "importPath": "pifuhd.lib.render.gl.cam_render",
+        "description": "pifuhd.lib.render.gl.cam_render",
+        "peekOfCode": "class CamRender(Render):\n    def __init__(self, width=1600, height=1200, name='Cam Renderer',\n                 program_files=['simple.fs', 'simple.vs'], color_size=1, ms_rate=1):\n        Render.__init__(self, width, height, name, program_files, color_size, ms_rate)\n        self.camera = None\n        glutDisplayFunc(self.display)\n        glutKeyboardFunc(self.keyboard)\n    def set_camera(self, camera):\n        self.camera = camera\n        self.projection_matrix, self.model_view_matrix = camera.get_gl_matrix()",
+        "detail": "pifuhd.lib.render.gl.cam_render",
+        "documentation": {}
+    },
+    {
+        "label": "ColorRender",
+        "kind": 6,
+        "importPath": "pifuhd.lib.render.gl.color_render",
+        "description": "pifuhd.lib.render.gl.color_render",
+        "peekOfCode": "class ColorRender(CamRender):\n    def __init__(self, width=1600, height=1200, name='Color Renderer'):\n        program_files = ['color.vs', 'color.fs']\n        CamRender.__init__(self, width, height, name, program_files=program_files)\n        # WARNING: this differs from vertex_buffer and vertex_data in Render\n        self.vert_buffer = {}\n        self.vert_data = {}\n        self.color_buffer = {}\n        self.color_data = {}\n        self.vertex_dim = {}",
+        "detail": "pifuhd.lib.render.gl.color_render",
+        "documentation": {}
+    },
+    {
+        "label": "loadShader",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.gl.framework",
+        "description": "pifuhd.lib.render.gl.framework",
+        "peekOfCode": "def loadShader(shaderType, shaderFile):\n    # check if file exists, get full path name\n    strFilename = findFileOrThrow(shaderFile)\n    shaderData = None\n    with open(strFilename, 'r') as f:\n        shaderData = f.read()\n    shader = glCreateShader(shaderType)\n    glShaderSource(shader, shaderData)  # note that this is a simpler function call than in C\n    # This shader compilation is more explicit than the one used in\n    # framework.cpp, which relies on a glutil wrapper function.",
+        "detail": "pifuhd.lib.render.gl.framework",
+        "documentation": {}
+    },
+    {
+        "label": "createProgram",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.gl.framework",
+        "description": "pifuhd.lib.render.gl.framework",
+        "peekOfCode": "def createProgram(shaderList):\n    program = glCreateProgram()\n    for shader in shaderList:\n        glAttachShader(program, shader)\n    glLinkProgram(program)\n    status = glGetProgramiv(program, GL_LINK_STATUS)\n    if status == GL_FALSE:\n        # Note that getting the error log is much simpler in Python than in C/C++\n        # and does not require explicit handling of the string buffer\n        strInfoLog = glGetProgramInfoLog(program)",
+        "detail": "pifuhd.lib.render.gl.framework",
+        "documentation": {}
+    },
+    {
+        "label": "findFileOrThrow",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.gl.framework",
+        "description": "pifuhd.lib.render.gl.framework",
+        "peekOfCode": "def findFileOrThrow(strBasename):\n    # Keep constant names in C-style convention, for readability\n    # when comparing to C(/C++) code.\n    if os.path.isfile(strBasename):\n        return strBasename\n    LOCAL_FILE_DIR = \"data\" + os.sep\n    GLOBAL_FILE_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + \"data\" + os.sep\n    strFilename = LOCAL_FILE_DIR + strBasename\n    if os.path.isfile(strFilename):\n        return strFilename",
+        "detail": "pifuhd.lib.render.gl.framework",
+        "documentation": {}
+    },
+    {
+        "label": "GeoRender",
+        "kind": 6,
+        "importPath": "pifuhd.lib.render.gl.geo_render",
+        "description": "pifuhd.lib.render.gl.geo_render",
+        "peekOfCode": "class GeoRender(CamRender):\n    def __init__(self, width=1600, height=1200, name='Geo Renderer'):\n        program_files = ['geo.vs', 'geo.fs']\n        CamRender.__init__(self, width, height, name, program_files=program_files)\n        # WARNING: this differs from vertex_buffer and vertex_data in Render\n        self.vert_buffer = {}\n        self.vert_data = {}\n        self.norm_buffer = {}\n        self.norm_data = {}\n        self.vertex_dim = {}",
+        "detail": "pifuhd.lib.render.gl.geo_render",
+        "documentation": {}
+    },
+    {
+        "label": "NormalRender",
+        "kind": 6,
+        "importPath": "pifuhd.lib.render.gl.normal_render",
+        "description": "pifuhd.lib.render.gl.normal_render",
+        "peekOfCode": "class NormalRender(CamRender):\n    def __init__(self, width=1600, height=1200, name='Normal Renderer'):\n        CamRender.__init__(self, width, height, name, program_files=['normal.vs', 'normal.fs'])\n        self.norm_buffer = glGenBuffers(1)\n        self.norm_data = None\n    def set_normal_mesh(self, vertices, faces, norms, face_normals):\n        CamRender.set_mesh(self, vertices, faces)\n        self.norm_data = norms[face_normals.reshape([-1])]\n        glBindBuffer(GL_ARRAY_BUFFER, self.norm_buffer)\n        glBufferData(GL_ARRAY_BUFFER, self.norm_data, GL_STATIC_DRAW)",
+        "detail": "pifuhd.lib.render.gl.normal_render",
+        "documentation": {}
+    },
+    {
+        "label": "Render",
+        "kind": 6,
+        "importPath": "pifuhd.lib.render.gl.render",
+        "description": "pifuhd.lib.render.gl.render",
+        "peekOfCode": "class Render:\n    def __init__(self, width=1600, height=1200, name='GL Renderer',\n                 program_files=['simple.fs', 'simple.vs'], color_size=1, ms_rate=1):\n        self.width = width\n        self.height = height\n        self.name = name\n        self.display_mode = GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH\n        self.use_inverse_depth = False\n        global _glut_window\n        if _glut_window is None:",
+        "detail": "pifuhd.lib.render.gl.render",
+        "documentation": {}
+    },
+    {
+        "label": "_glut_window",
+        "kind": 5,
+        "importPath": "pifuhd.lib.render.gl.render",
+        "description": "pifuhd.lib.render.gl.render",
+        "peekOfCode": "_glut_window = None\nclass Render:\n    def __init__(self, width=1600, height=1200, name='GL Renderer',\n                 program_files=['simple.fs', 'simple.vs'], color_size=1, ms_rate=1):\n        self.width = width\n        self.height = height\n        self.name = name\n        self.display_mode = GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH\n        self.use_inverse_depth = False\n        global _glut_window",
+        "detail": "pifuhd.lib.render.gl.render",
+        "documentation": {}
+    },
+    {
+        "label": "Camera",
+        "kind": 6,
+        "importPath": "pifuhd.lib.render.camera",
+        "description": "pifuhd.lib.render.camera",
+        "peekOfCode": "class Camera:\n    def __init__(self, width=1600, height=1200):\n        # Focal Length\n        # equivalent 50mm\n        focal = np.sqrt(width * width + height * height)\n        self.focal_x = focal\n        self.focal_y = focal\n        # Principal Point Offset\n        self.principal_x = width / 2\n        self.principal_y = height / 2",
+        "detail": "pifuhd.lib.render.camera",
+        "documentation": {}
+    },
+    {
+        "label": "KRT_from_P",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.camera",
+        "description": "pifuhd.lib.render.camera",
+        "peekOfCode": "def KRT_from_P(proj_mat, normalize_K=True):\n    res = cv2.decomposeProjectionMatrix(proj_mat)\n    K, Rot, camera_center_homog = res[0], res[1], res[2]\n    camera_center = camera_center_homog[0:3] / camera_center_homog[3]\n    trans = -Rot.dot(camera_center)\n    if normalize_K:\n        K = K / K[2][2]\n    return K, Rot, trans\ndef MVP_from_P(proj_mat, width, height, near=0.1, far=10000):\n    '''",
+        "detail": "pifuhd.lib.render.camera",
+        "documentation": {}
+    },
+    {
+        "label": "MVP_from_P",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.camera",
+        "description": "pifuhd.lib.render.camera",
+        "peekOfCode": "def MVP_from_P(proj_mat, width, height, near=0.1, far=10000):\n    '''\n    Convert OpenCV camera calibration matrix to OpenGL projection and model view matrix\n    :param proj_mat: OpenCV camera projeciton matrix\n    :param width: Image width\n    :param height: Image height\n    :param near: Z near value\n    :param far: Z far value\n    :return: OpenGL projection matrix and model view matrix\n    '''",
+        "detail": "pifuhd.lib.render.camera",
+        "documentation": {}
+    },
+    {
+        "label": "vec3",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def vec3(x, y, z):\n    return np.array([x, y, z], dtype=np.float32)\ndef radians(v):\n    return np.radians(v)\ndef identity():\n    return np.identity(4, dtype=np.float32)\ndef empty():\n    return np.zeros([4, 4], dtype=np.float32)\ndef magnitude(v):\n    return np.linalg.norm(v)",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def radians(v):\n    return np.radians(v)\ndef identity():\n    return np.identity(4, dtype=np.float32)\ndef empty():\n    return np.zeros([4, 4], dtype=np.float32)\ndef magnitude(v):\n    return np.linalg.norm(v)\ndef normalize(v):\n    m = magnitude(v)",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "identity",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def identity():\n    return np.identity(4, dtype=np.float32)\ndef empty():\n    return np.zeros([4, 4], dtype=np.float32)\ndef magnitude(v):\n    return np.linalg.norm(v)\ndef normalize(v):\n    m = magnitude(v)\n    return v if m == 0 else v / m\ndef dot(u, v):",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "empty",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def empty():\n    return np.zeros([4, 4], dtype=np.float32)\ndef magnitude(v):\n    return np.linalg.norm(v)\ndef normalize(v):\n    m = magnitude(v)\n    return v if m == 0 else v / m\ndef dot(u, v):\n    return np.sum(u * v)\ndef cross(u, v):",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "magnitude",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def magnitude(v):\n    return np.linalg.norm(v)\ndef normalize(v):\n    m = magnitude(v)\n    return v if m == 0 else v / m\ndef dot(u, v):\n    return np.sum(u * v)\ndef cross(u, v):\n    res = vec3(0, 0, 0)\n    res[0] = u[1] * v[2] - u[2] * v[1]",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "normalize",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def normalize(v):\n    m = magnitude(v)\n    return v if m == 0 else v / m\ndef dot(u, v):\n    return np.sum(u * v)\ndef cross(u, v):\n    res = vec3(0, 0, 0)\n    res[0] = u[1] * v[2] - u[2] * v[1]\n    res[1] = u[2] * v[0] - u[0] * v[2]\n    res[2] = u[0] * v[1] - u[1] * v[0]",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "dot",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def dot(u, v):\n    return np.sum(u * v)\ndef cross(u, v):\n    res = vec3(0, 0, 0)\n    res[0] = u[1] * v[2] - u[2] * v[1]\n    res[1] = u[2] * v[0] - u[0] * v[2]\n    res[2] = u[0] * v[1] - u[1] * v[0]\n    return res\n# below functions can be optimized\ndef translate(m, v):",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "cross",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def cross(u, v):\n    res = vec3(0, 0, 0)\n    res[0] = u[1] * v[2] - u[2] * v[1]\n    res[1] = u[2] * v[0] - u[0] * v[2]\n    res[2] = u[0] * v[1] - u[1] * v[0]\n    return res\n# below functions can be optimized\ndef translate(m, v):\n    res = np.copy(m)\n    res[:, 3] = m[:, 0] * v[0] + m[:, 1] * v[1] + m[:, 2] * v[2] + m[:, 3]",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "translate",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def translate(m, v):\n    res = np.copy(m)\n    res[:, 3] = m[:, 0] * v[0] + m[:, 1] * v[1] + m[:, 2] * v[2] + m[:, 3]\n    return res\ndef rotate(m, angle, v):\n    a = angle\n    c = np.cos(a)\n    s = np.sin(a)\n    axis = normalize(v)\n    temp = (1 - c) * axis",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "rotate",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def rotate(m, angle, v):\n    a = angle\n    c = np.cos(a)\n    s = np.sin(a)\n    axis = normalize(v)\n    temp = (1 - c) * axis\n    rot = empty()\n    rot[0][0] = c + temp[0] * axis[0]\n    rot[0][1] = temp[0] * axis[1] + s * axis[2]\n    rot[0][2] = temp[0] * axis[2] - s * axis[1]",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "perspective",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def perspective(fovy, aspect, zNear, zFar):\n    tanHalfFovy = np.tan(fovy / 2)\n    res = empty()\n    res[0][0] = 1 / (aspect * tanHalfFovy)\n    res[1][1] = 1 / (tanHalfFovy)\n    res[2][3] = -1\n    res[2][2] = - (zFar + zNear) / (zFar - zNear)\n    res[3][2] = -(2 * zFar * zNear) / (zFar - zNear)\n    return res.T\ndef ortho(left, right, bottom, top, zNear, zFar):",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "ortho",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def ortho(left, right, bottom, top, zNear, zFar):\n    # res = np.ones([4, 4], dtype=np.float32)\n    res = identity()\n    res[0][0] = 2 / (right - left)\n    res[1][1] = 2 / (top - bottom)\n    res[2][2] = - 2 / (zFar - zNear)\n    res[3][0] = - (right + left) / (right - left)\n    res[3][1] = - (top + bottom) / (top - bottom)\n    res[3][2] = - (zFar + zNear) / (zFar - zNear)\n    return res.T",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "lookat",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def lookat(eye, center, up):\n    f = normalize(center - eye)\n    s = normalize(cross(f, up))\n    u = cross(s, f)\n    res = identity()\n    res[0][0] = s[0]\n    res[1][0] = s[1]\n    res[2][0] = s[2]\n    res[0][1] = u[0]\n    res[1][1] = u[1]",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "transform",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.glm",
+        "description": "pifuhd.lib.render.glm",
+        "peekOfCode": "def transform(d, m):\n    return np.dot(m, d.T).T",
+        "detail": "pifuhd.lib.render.glm",
+        "documentation": {}
+    },
+    {
+        "label": "save_obj_mesh",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def save_obj_mesh(mesh_path, verts, faces):\n    file = open(mesh_path, 'w')\n    for v in verts:\n        file.write('v %.4f %.4f %.4f\\n' % (v[0], v[1], v[2]))\n    for f in faces:\n        f_plus = f + 1\n        file.write('f %d %d %d\\n' % (f_plus[0], f_plus[1], f_plus[2]))\n    file.close()\n# https://github.com/ratcave/wavefront_reader\ndef read_mtlfile(fname):",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "read_mtlfile",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def read_mtlfile(fname):\n    materials = {}\n    with open(fname) as f:\n        lines = f.read().splitlines()\n    for line in lines:\n        if line:\n            split_line = line.strip().split(' ', 1)\n            if len(split_line) < 2:\n                continue\n            prefix, data = split_line[0], split_line[1]",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "load_obj_mesh_mtl",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def load_obj_mesh_mtl(mesh_file):\n    vertex_data = []\n    norm_data = []\n    uv_data = []\n    face_data = []\n    face_norm_data = []\n    face_uv_data = []\n    # face per material\n    face_data_mat = {}\n    face_norm_data_mat = {}",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "load_obj_mesh",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def load_obj_mesh(mesh_file, with_normal=False, with_texture=False):\n    vertex_data = []\n    norm_data = []\n    uv_data = []\n    face_data = []\n    face_norm_data = []\n    face_uv_data = []\n    if isinstance(mesh_file, str):\n        f = open(mesh_file, \"r\")\n    else:",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_v3",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def normalize_v3(arr):\n    ''' Normalize a numpy array of 3 component vectors shape=(n,3) '''\n    lens = np.sqrt(arr[:, 0] ** 2 + arr[:, 1] ** 2 + arr[:, 2] ** 2)\n    eps = 0.00000001\n    lens[lens < eps] = eps\n    arr[:, 0] /= lens\n    arr[:, 1] /= lens\n    arr[:, 2] /= lens\n    return arr\ndef compute_normal(vertices, faces):",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "compute_normal",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def compute_normal(vertices, faces):\n    # Create a zeroed array with the same type and shape as our vertices i.e., per vertex normal\n    norm = np.zeros(vertices.shape, dtype=vertices.dtype)\n    # Create an indexed view into the vertex array using the array of three indices for triangles\n    tris = vertices[faces]\n    # Calculate the normal for all the triangles, by taking the cross product of the vectors v1-v0, and v2-v0 in each triangle\n    n = np.cross(tris[::, 1] - tris[::, 0], tris[::, 2] - tris[::, 0])\n    # n is now an array of normals per triangle. The length of each normal is dependent the vertices,\n    # we need to normalize these, so that our next step weights each normal equally.\n    normalize_v3(n)",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "compute_tangent",
+        "kind": 2,
+        "importPath": "pifuhd.lib.render.mesh",
+        "description": "pifuhd.lib.render.mesh",
+        "peekOfCode": "def compute_tangent(vertices, faces, normals, uvs, faceuvs):    \n    # NOTE: this could be numerically unstable around [0,0,1]\n    # but other current solutions are pretty freaky somehow\n    c1 = np.cross(normals, np.array([0,1,0.0]))\n    tan = c1\n    normalize_v3(tan)\n    btan = np.cross(normals, tan)\n    # NOTE: traditional version is below\n    # pts_tris = vertices[faces]\n    # uv_tris = uvs[faceuvs]",
+        "detail": "pifuhd.lib.render.mesh",
+        "documentation": {}
+    },
+    {
+        "label": "set_renderer",
+        "kind": 2,
+        "importPath": "pifuhd.lib.colab_util",
+        "description": "pifuhd.lib.colab_util",
+        "peekOfCode": "def set_renderer():\n    # Setup\n    device = torch.device(\"cuda:0\")\n    torch.cuda.set_device(device)\n    # Initialize an OpenGL perspective camera.\n    R, T = look_at_view_transform(2.0, 0, 180) \n    cameras = OpenGLOrthographicCameras(device=device, R=R, T=T)\n    raster_settings = RasterizationSettings(\n        image_size=512, \n        blur_radius=0.0, ",
+        "detail": "pifuhd.lib.colab_util",
+        "documentation": {}
+    },
+    {
+        "label": "get_verts_rgb_colors",
+        "kind": 2,
+        "importPath": "pifuhd.lib.colab_util",
+        "description": "pifuhd.lib.colab_util",
+        "peekOfCode": "def get_verts_rgb_colors(obj_path):\n  rgb_colors = []\n  f = open(obj_path)\n  lines = f.readlines()\n  for line in lines:\n    ls = line.split(' ')\n    if len(ls) == 7:\n      rgb_colors.append(ls[-3:])\n  return np.array(rgb_colors, dtype='float32')[None, :, :]\ndef generate_video_from_obj(obj_path, image_path, video_path, renderer):",
+        "detail": "pifuhd.lib.colab_util",
+        "documentation": {}
+    },
+    {
+        "label": "generate_video_from_obj",
+        "kind": 2,
+        "importPath": "pifuhd.lib.colab_util",
+        "description": "pifuhd.lib.colab_util",
+        "peekOfCode": "def generate_video_from_obj(obj_path, image_path, video_path, renderer):\n    input_image = cv2.imread(image_path)\n    input_image = input_image[:,:input_image.shape[1]//3]\n    input_image = cv2.resize(input_image, (512,512))\n    # Setup\n    device = torch.device(\"cuda:0\")\n    torch.cuda.set_device(device)\n    # Load obj file\n    verts_rgb_colors = get_verts_rgb_colors(obj_path)\n    verts_rgb_colors = torch.from_numpy(verts_rgb_colors).to(device)",
+        "detail": "pifuhd.lib.colab_util",
+        "documentation": {}
+    },
+    {
+        "label": "video",
+        "kind": 2,
+        "importPath": "pifuhd.lib.colab_util",
+        "description": "pifuhd.lib.colab_util",
+        "peekOfCode": "def video(path):\n    mp4 = open(path,'rb').read()\n    data_url = \"data:video/mp4;base64,\" + b64encode(mp4).decode()\n    return HTML('<video width=500 controls loop> <source src=\"%s\" type=\"video/mp4\"></video>' % data_url)",
+        "detail": "pifuhd.lib.colab_util",
+        "documentation": {}
+    },
+    {
+        "label": "MeshEvaluator",
+        "kind": 6,
+        "importPath": "pifuhd.lib.evaluator",
+        "description": "pifuhd.lib.evaluator",
+        "peekOfCode": "class MeshEvaluator:\n    _normal_render = None\n    @staticmethod\n    def init_gl():\n        from .render.gl.normal_render import NormalRender\n        MeshEvaluator._normal_render = NormalRender(width=512, height=512)\n    def __init__(self):\n        pass\n    def set_mesh(self, src_path, tgt_path, scale_factor=1.0, offset=0):\n        self.src_mesh = trimesh.load(src_path)",
+        "detail": "pifuhd.lib.evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "euler_to_rot_mat",
+        "kind": 2,
+        "importPath": "pifuhd.lib.evaluator",
+        "description": "pifuhd.lib.evaluator",
+        "peekOfCode": "def euler_to_rot_mat(r_x, r_y, r_z):\n    R_x = np.array([[1, 0, 0],\n                    [0, math.cos(r_x), -math.sin(r_x)],\n                    [0, math.sin(r_x), math.cos(r_x)]\n                    ])\n    R_y = np.array([[math.cos(r_y), 0, math.sin(r_y)],\n                    [0, 1, 0],\n                    [-math.sin(r_y), 0, math.cos(r_y)]\n                    ])\n    R_z = np.array([[math.cos(r_z), -math.sin(r_z), 0],",
+        "detail": "pifuhd.lib.evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "pifuhd.lib.geometry",
+        "description": "pifuhd.lib.geometry",
+        "peekOfCode": "def index(feat, uv):\n    '''\n    extract image features at floating coordinates with bilinear interpolation\n    args:\n        feat: [B, C, H, W] image features\n        uv: [B, 2, N] normalized image coordinates ranged in [-1, 1]\n    return:\n        [B, C, N] sampled pixel values\n    '''\n    uv = uv.transpose(1, 2)",
+        "detail": "pifuhd.lib.geometry",
+        "documentation": {}
+    },
+    {
+        "label": "orthogonal",
+        "kind": 2,
+        "importPath": "pifuhd.lib.geometry",
+        "description": "pifuhd.lib.geometry",
+        "peekOfCode": "def orthogonal(points, calib, transform=None):\n    '''\n    project points onto screen space using orthogonal projection\n    args:\n        points: [B, 3, N] 3d points in world coordinates\n        calib: [B, 3, 4] projection matrix\n        transform: [B, 2, 3] screen space transformation\n    return:\n        [B, 3, N] 3d coordinates in screen space\n    '''",
+        "detail": "pifuhd.lib.geometry",
+        "documentation": {}
+    },
+    {
+        "label": "perspective",
+        "kind": 2,
+        "importPath": "pifuhd.lib.geometry",
+        "description": "pifuhd.lib.geometry",
+        "peekOfCode": "def perspective(points, calib, transform=None):\n    '''\n    project points onto screen space using perspective projection\n    args:\n        points: [B, 3, N] 3d points in world coordinates\n        calib: [B, 3, 4] projection matrix\n        transform: [B, 2, 3] screen space trasnformation\n    return:\n        [B, 3, N] 3d coordinates in screen space\n    '''",
+        "detail": "pifuhd.lib.geometry",
+        "documentation": {}
+    },
+    {
+        "label": "reconstruction",
+        "kind": 2,
+        "importPath": "pifuhd.lib.mesh_util",
+        "description": "pifuhd.lib.mesh_util",
+        "peekOfCode": "def reconstruction(net, cuda, calib_tensor,\n                   resolution, b_min, b_max, thresh=0.5,\n                   use_octree=False, num_samples=10000, transform=None):\n    '''\n    Reconstruct meshes from sdf predicted by the network.\n    :param net: a BasePixImpNet object. call image filter beforehead.\n    :param cuda: cuda device\n    :param calib_tensor: calibration tensor\n    :param resolution: resolution of the grid cell\n    :param b_min: bounding box corner [x_min, y_min, z_min]",
+        "detail": "pifuhd.lib.mesh_util",
+        "documentation": {}
+    },
+    {
+        "label": "save_obj_mesh",
+        "kind": 2,
+        "importPath": "pifuhd.lib.mesh_util",
+        "description": "pifuhd.lib.mesh_util",
+        "peekOfCode": "def save_obj_mesh(mesh_path, verts, faces=None):\n    file = open(mesh_path, 'w')\n    for v in verts:\n        file.write('v %.4f %.4f %.4f\\n' % (v[0], v[1], v[2]))\n    if faces is not None:\n        for f in faces:\n            if f[0] == f[1] or f[1] == f[2] or f[0] == f[2]:\n                continue\n            f_plus = f + 1\n            file.write('f %d %d %d\\n' % (f_plus[0], f_plus[2], f_plus[1]))",
+        "detail": "pifuhd.lib.mesh_util",
+        "documentation": {}
+    },
+    {
+        "label": "save_obj_mesh_with_color",
+        "kind": 2,
+        "importPath": "pifuhd.lib.mesh_util",
+        "description": "pifuhd.lib.mesh_util",
+        "peekOfCode": "def save_obj_mesh_with_color(mesh_path, verts, faces, colors):\n    file = open(mesh_path, 'w')\n    for idx, v in enumerate(verts):\n        c = colors[idx]\n        file.write('v %.4f %.4f %.4f %.4f %.4f %.4f\\n' % (v[0], v[1], v[2], c[0], c[1], c[2]))\n    for f in faces:\n        f_plus = f + 1\n        file.write('f %d %d %d\\n' % (f_plus[0], f_plus[2], f_plus[1]))\n    file.close()\ndef save_obj_mesh_with_uv(mesh_path, verts, faces, uvs):",
+        "detail": "pifuhd.lib.mesh_util",
+        "documentation": {}
+    },
+    {
+        "label": "save_obj_mesh_with_uv",
+        "kind": 2,
+        "importPath": "pifuhd.lib.mesh_util",
+        "description": "pifuhd.lib.mesh_util",
+        "peekOfCode": "def save_obj_mesh_with_uv(mesh_path, verts, faces, uvs):\n    file = open(mesh_path, 'w')\n    for idx, v in enumerate(verts):\n        vt = uvs[idx]\n        file.write('v %.4f %.4f %.4f\\n' % (v[0], v[1], v[2]))\n        file.write('vt %.4f %.4f\\n' % (vt[0], vt[1]))\n    for f in faces:\n        f_plus = f + 1\n        file.write('f %d/%d %d/%d %d/%d\\n' % (f_plus[0], f_plus[0],\n                                              f_plus[2], f_plus[2],",
+        "detail": "pifuhd.lib.mesh_util",
+        "documentation": {}
+    },
+    {
+        "label": "LocalEnhancer",
+        "kind": 6,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "class LocalEnhancer(nn.Module):\n    def __init__(self, input_nc, output_nc, ngf=32, n_downsample_global=3, n_blocks_global=9, \n                 n_local_enhancers=1, n_blocks_local=3, norm_layer=nn.BatchNorm2d, padding_type='reflect'):        \n        super(LocalEnhancer, self).__init__()\n        self.n_local_enhancers = n_local_enhancers\n        ###### global generator model #####           \n        ngf_global = ngf * (2**n_local_enhancers)\n        model_global = GlobalGenerator(input_nc, output_nc, ngf_global, n_downsample_global, n_blocks_global, norm_layer).model        \n        model_global = [model_global[i] for i in range(len(model_global)-3)] # get rid of final convolution layers        \n        self.model = nn.Sequential(*model_global)                ",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalGenerator",
+        "kind": 6,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "class GlobalGenerator(nn.Module):\n    def __init__(self, input_nc, output_nc, ngf=64, n_downsampling=3, n_blocks=9, norm_layer=nn.BatchNorm2d, \n                 padding_type='reflect', last_op=nn.Tanh()):\n        assert(n_blocks >= 0)\n        super(GlobalGenerator, self).__init__()        \n        activation = nn.ReLU(True)        \n        model = [nn.ReflectionPad2d(3), nn.Conv2d(input_nc, ngf, kernel_size=7, padding=0), norm_layer(ngf), activation]\n        ### downsample\n        for i in range(n_downsampling):\n            mult = 2**i",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "ResnetBlock",
+        "kind": 6,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "class ResnetBlock(nn.Module):\n    def __init__(self, dim, padding_type, norm_layer, activation=nn.ReLU(True), use_dropout=False):\n        super(ResnetBlock, self).__init__()\n        self.conv_block = self.build_conv_block(dim, padding_type, norm_layer, activation, use_dropout)\n    def build_conv_block(self, dim, padding_type, norm_layer, activation, use_dropout):\n        conv_block = []\n        p = 0\n        if padding_type == 'reflect':\n            conv_block += [nn.ReflectionPad2d(1)]\n        elif padding_type == 'replicate':",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "Encoder",
+        "kind": 6,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "class Encoder(nn.Module):\n    def __init__(self, input_nc, output_nc, ngf=32, n_downsampling=4, norm_layer=nn.BatchNorm2d):\n        super(Encoder, self).__init__()        \n        self.output_nc = output_nc        \n        model = [nn.ReflectionPad2d(3), nn.Conv2d(input_nc, ngf, kernel_size=7, padding=0), \n                 norm_layer(ngf), nn.ReLU(True)]             \n        ### downsample\n        for i in range(n_downsampling):\n            mult = 2**i\n            model += [nn.Conv2d(ngf * mult, ngf * mult * 2, kernel_size=3, stride=2, padding=1),",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "weights_init",
+        "kind": 2,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "def weights_init(m):\n    classname = m.__class__.__name__\n    if classname.find('Conv') != -1:\n        m.weight.data.normal_(0.0, 0.02)\n    elif classname.find('BatchNorm2d') != -1:\n        m.weight.data.normal_(1.0, 0.02)\n        m.bias.data.fill_(0)\ndef get_norm_layer(norm_type='instance'):\n    if norm_type == 'batch':\n        norm_layer = functools.partial(nn.BatchNorm2d, affine=True)",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "get_norm_layer",
+        "kind": 2,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "def get_norm_layer(norm_type='instance'):\n    if norm_type == 'batch':\n        norm_layer = functools.partial(nn.BatchNorm2d, affine=True)\n    elif norm_type == 'instance':\n        norm_layer = functools.partial(nn.InstanceNorm2d, affine=False)\n    else:\n        raise NotImplementedError('normalization layer [%s] is not found' % norm_type)\n    return norm_layer\ndef define_G(input_nc, output_nc, ngf, netG, n_downsample_global=3, n_blocks_global=9, n_local_enhancers=1, \n             n_blocks_local=3, norm='instance', gpu_ids=[], last_op=nn.Tanh()):    ",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "define_G",
+        "kind": 2,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "def define_G(input_nc, output_nc, ngf, netG, n_downsample_global=3, n_blocks_global=9, n_local_enhancers=1, \n             n_blocks_local=3, norm='instance', gpu_ids=[], last_op=nn.Tanh()):    \n    norm_layer = get_norm_layer(norm_type=norm)     \n    if netG == 'global':    \n        netG = GlobalGenerator(input_nc, output_nc, ngf, n_downsample_global, n_blocks_global, norm_layer, last_op=last_op)       \n    elif netG == 'local':        \n        netG = LocalEnhancer(input_nc, output_nc, ngf, n_downsample_global, n_blocks_global, \n                                  n_local_enhancers, n_blocks_local, norm_layer)\n    elif netG == 'encoder':\n        netG = Encoder(input_nc, output_nc, ngf, n_downsample_global, norm_layer)",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "print_network",
+        "kind": 2,
+        "importPath": "pifuhd.lib.networks",
+        "description": "pifuhd.lib.networks",
+        "peekOfCode": "def print_network(net):\n    if isinstance(net, list):\n        net = net[0]\n    num_params = 0\n    for param in net.parameters():\n        num_params += param.numel()\n    print(net)\n    print('Total number of parameters: %d' % num_params)\n##############################################################################\n# Generator",
+        "detail": "pifuhd.lib.networks",
+        "documentation": {}
+    },
+    {
+        "label": "CustomBCELoss",
+        "kind": 6,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "class CustomBCELoss(nn.Module):\n    def __init__(self, brock=False, gamma=None):\n        super(CustomBCELoss, self).__init__()\n        self.brock = brock\n        self.gamma = gamma\n    def forward(self, pred, gt, gamma, w=None):\n        x_hat = torch.clamp(pred, 1e-5, 1.0-1e-5) # prevent log(0) from happening\n        gamma = gamma[:,None,None] if self.gamma is None else self.gamma\n        if self.brock:\n            x = 3.0*gt - 1.0 # rescaled to [-1,2]",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "CustomMSELoss",
+        "kind": 6,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "class CustomMSELoss(nn.Module):\n    def __init__(self, gamma=None):\n        super(CustomMSELoss, self).__init__()\n        self.gamma = gamma\n    def forward(self, pred, gt, gamma, w=None):\n        gamma = gamma[:,None,None] if self.gamma is None else self.gamma\n        weight = gamma * gt + (1.0-gamma) * (1 - gt)\n        loss = (weight * (pred - gt).pow(2)).mean()\n        if w is not None:\n            return (loss * w).mean()",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "load_state_dict",
+        "kind": 2,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "def load_state_dict(state_dict, net):\n    model_dict = net.state_dict()\n    pretrained_dict = {k: v for k, v in state_dict.items() if k in model_dict}                    \n    for k, v in pretrained_dict.items():                      \n        if v.size() == model_dict[k].size():\n            model_dict[k] = v\n    not_initialized = set()\n    for k, v in model_dict.items():\n        if k not in pretrained_dict or v.size() != pretrained_dict[k].size():\n            not_initialized.add(k.split('.')[0])",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "conv3x3",
+        "kind": 2,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "def conv3x3(in_planes, out_planes, strd=1, padding=1, bias=False):\n    return nn.Conv2d(in_planes, out_planes, kernel_size=3,\n                     stride=strd, padding=padding, bias=bias)\ndef init_weights(net, init_type='normal', init_gain=0.02):\n    def init_func(m):  # define the initialization function\n        classname = m.__class__.__name__\n        if hasattr(m, 'weight') and (classname.find('Conv') != -1 or classname.find('Linear') != -1):\n            if init_type == 'normal':\n                init.normal_(m.weight.data, 0.0, init_gain)\n            elif init_type == 'xavier':",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "init_weights",
+        "kind": 2,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "def init_weights(net, init_type='normal', init_gain=0.02):\n    def init_func(m):  # define the initialization function\n        classname = m.__class__.__name__\n        if hasattr(m, 'weight') and (classname.find('Conv') != -1 or classname.find('Linear') != -1):\n            if init_type == 'normal':\n                init.normal_(m.weight.data, 0.0, init_gain)\n            elif init_type == 'xavier':\n                init.xavier_normal_(m.weight.data, gain=init_gain)\n            elif init_type == 'kaiming':\n                init.kaiming_normal_(m.weight.data, a=0, mode='fan_in')",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "init_net",
+        "kind": 2,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "def init_net(net, init_type='normal', init_gain=0.02, gpu_ids=[]):\n    if len(gpu_ids) > 0:\n        assert (torch.cuda.is_available())\n        net.to(gpu_ids[0])\n        net = torch.nn.DataParallel(net, gpu_ids)  # multi-GPUs\n    init_weights(net, init_type, init_gain=init_gain)\n    return net\nclass CustomBCELoss(nn.Module):\n    def __init__(self, brock=False, gamma=None):\n        super(CustomBCELoss, self).__init__()",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "createMLP",
+        "kind": 2,
+        "importPath": "pifuhd.lib.net_util",
+        "description": "pifuhd.lib.net_util",
+        "peekOfCode": "def createMLP(dims, norm='bn', activation='relu', last_op=nn.Tanh(), dropout=False):\n    act = None\n    if activation == 'relu':\n        act = nn.ReLU()\n    if activation == 'lrelu':\n        act = nn.LeakyReLU()\n    if activation == 'selu':\n        act = nn.SELU()\n    if activation == 'elu':\n        act = nn.ELU()",
+        "detail": "pifuhd.lib.net_util",
+        "documentation": {}
+    },
+    {
+        "label": "BaseOptions",
+        "kind": 6,
+        "importPath": "pifuhd.lib.options",
+        "description": "pifuhd.lib.options",
+        "peekOfCode": "class BaseOptions():\n    def __init__(self):\n        self.initialized = False\n        self.parser = None\n    def initialize(self, parser):\n        # Datasets related\n        g_data = parser.add_argument_group('Data')\n        g_data.add_argument('--dataset', type=str, default='renderppl', help='dataset name')\n        g_data.add_argument('--dataroot', type=str, default='./data',\n                            help='path to images (data folder)')",
+        "detail": "pifuhd.lib.options",
+        "documentation": {}
+    },
+    {
+        "label": "create_grid",
+        "kind": 2,
+        "importPath": "pifuhd.lib.sdf",
+        "description": "pifuhd.lib.sdf",
+        "peekOfCode": "def create_grid(resX, resY, resZ, b_min=np.array([-1, -1, -1]), b_max=np.array([1, 1, 1]), transform=None):\n    '''\n    Create a dense grid of given resolution and bounding box\n    :param resX: resolution along X axis\n    :param resY: resolution along Y axis\n    :param resZ: resolution along Z axis\n    :param b_min: vec3 (x_min, y_min, z_min) bounding box corner\n    :param b_max: vec3 (x_max, y_max, z_max) bounding box corner\n    :return: [3, resX, resY, resZ] coordinates of the grid, and transform matrix from mesh index\n    '''",
+        "detail": "pifuhd.lib.sdf",
+        "documentation": {}
+    },
+    {
+        "label": "batch_eval",
+        "kind": 2,
+        "importPath": "pifuhd.lib.sdf",
+        "description": "pifuhd.lib.sdf",
+        "peekOfCode": "def batch_eval(points, eval_func, num_samples=512 * 512 * 512):\n    num_pts = points.shape[1]\n    sdf = np.zeros(num_pts)\n    num_batches = num_pts // num_samples\n    for i in range(num_batches):\n        sdf[i * num_samples:i * num_samples + num_samples] = eval_func(\n            points[:, i * num_samples:i * num_samples + num_samples])\n    if num_pts % num_samples:\n        sdf[num_batches * num_samples:] = eval_func(points[:, num_batches * num_samples:])\n    return sdf",
+        "detail": "pifuhd.lib.sdf",
+        "documentation": {}
+    },
+    {
+        "label": "batch_eval_tensor",
+        "kind": 2,
+        "importPath": "pifuhd.lib.sdf",
+        "description": "pifuhd.lib.sdf",
+        "peekOfCode": "def batch_eval_tensor(points, eval_func, num_samples=512 * 512 * 512):\n    num_pts = points.size(1)\n    num_batches = num_pts // num_samples\n    vals = []\n    for i in range(num_batches):\n        vals.append(eval_func(points[:, i * num_samples:i * num_samples + num_samples]))\n    if num_pts % num_samples:\n        vals.append(eval_func(points[:, num_batches * num_samples:]))\n    return np.concatenate(vals,0)\ndef eval_grid(coords, eval_func, num_samples=512 * 512 * 512):",
+        "detail": "pifuhd.lib.sdf",
+        "documentation": {}
+    },
+    {
+        "label": "eval_grid",
+        "kind": 2,
+        "importPath": "pifuhd.lib.sdf",
+        "description": "pifuhd.lib.sdf",
+        "peekOfCode": "def eval_grid(coords, eval_func, num_samples=512 * 512 * 512):\n    resolution = coords.shape[1:4]\n    coords = coords.reshape([3, -1])\n    sdf = batch_eval(coords, eval_func, num_samples=num_samples)\n    return sdf.reshape(resolution)\nimport time\ndef eval_grid_octree(coords, eval_func,\n                     init_resolution=64, threshold=0.05,\n                     num_samples=512 * 512 * 512):\n    resolution = coords.shape[1:4]",
+        "detail": "pifuhd.lib.sdf",
+        "documentation": {}
+    },
+    {
+        "label": "eval_grid_octree",
+        "kind": 2,
+        "importPath": "pifuhd.lib.sdf",
+        "description": "pifuhd.lib.sdf",
+        "peekOfCode": "def eval_grid_octree(coords, eval_func,\n                     init_resolution=64, threshold=0.05,\n                     num_samples=512 * 512 * 512):\n    resolution = coords.shape[1:4]\n    sdf = np.zeros(resolution)\n    notprocessed = np.zeros(resolution, dtype=np.bool)\n    notprocessed[:-1,:-1,:-1] = True\n    grid_mask = np.zeros(resolution, dtype=np.bool)\n    reso = resolution[0] // init_resolution\n    while reso > 0:",
+        "detail": "pifuhd.lib.sdf",
         "documentation": {}
     },
     {

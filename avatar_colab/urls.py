@@ -14,7 +14,7 @@ schema_view = get_schema_view(
       description="Ai Avatar Generator App Documentation",
       terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="kezechristian@gmail.com"),
-      license=openapi.License(name="Mechrecommender licence"),
+      license=openapi.License(name="Avatar_Colab licence"),
    ),
    public=True,
    permission_classes=(permissions.AllowAny,),
