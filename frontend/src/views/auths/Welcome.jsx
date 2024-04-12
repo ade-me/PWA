@@ -22,9 +22,9 @@ function Welcome() {
 
     return (
         <LazyLoad debounce={500} className="h-screen w-screen bg-black-500">
-            <div className="flex items-center justify-center h-screen bg-white w-screen">
-                <section className="Social-Logins-container">
-                    <div className="Welcome pt-5">
+            <section className="flex items-center justify-center h-screen bg-white w-screen">
+                <div className="Social-Logins-container">
+                    <div className="Welcome pt-5 flex flex-col items-center justify-center">
                         <h1 className="text-black-500 text-center text-3xl md:text-4xl mb-6 font-bold">Welcome</h1>
                         <p className="text-center text-black-200 text-1xl md:text-2xl mb-5">Sign in to continue</p>
                         <div className="Socials-box w-full h-auto flex flex-col items-center justify-center mb-8 gap-2">
@@ -53,11 +53,11 @@ function Welcome() {
                                 </button>
                             </div>
                         </div>
-                        <button className="Signin-socials-btn w-full bg-gray-300 mb-6">Sign in</button>
+                        <Link to="/login" className="Signin-socials-btn w-full bg-gray-300 mb-6 text-center">Sign in</Link>
                         <p className="text-1xl">Do not have an account? &nbsp;<Link to="/register" className="font-bold">Sign Up</Link></p>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </LazyLoad>
     );
 }
