@@ -1,43 +1,36 @@
 from rest_framework import viewsets
 from django.http import HttpResponseRedirect
-
-
+from django.conf import settings
+from rest_framework.response import Response
 from core_app_root.avatar_creation.serializers.create_avatar import CreateAvatar
-# Avatar creation api end point controller
+import cv2
+import dlib
+import numpy as np
+import os
+
 class CreateAvatar(viewsets.ModelViewSet):
     http_method_names = ['post']
-
-    
-    serializer_class=CreateAvatar
+    serializer_class = CreateAvatar
     
     def get_queryset(self):
         return super().get_queryset()
     
-    def create(self,request):
-        serializer=self.serializer_class(data=request.data)
+    def create(self, request):
+        serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-    
-            import cv2
-            import dlib
-            import numpy as np
-            # from rembg import remove
             # Load pre-trained face detector from dlib
-            image_file = serializer.validated_data['file']
-
-            # Read the image file into a numpy array
-            nparr = np.fromstring(image_file.read(), np.uint8)
-            head_image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-            print
             detector = dlib.get_frontal_face_detector()
-            print(nparr)
             # Load pre-trained facial landmark predictor
             predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
-            # Load the input image with the headless 3D body
+            # Read the uploaded image
+            image_file = serializer.validated_data['file']
+            nparr = np.fromstring(image_file.read(), np.uint8)
+            head_image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+
+            # Load the body image and resize its width by three times
             body_image = cv2.imread("testhumanimage1.jfif")
-            # body_image=remove(body_image)
-            # Load the input image with the head
-            # head_image = cv2.imread(head_image)
+            body_image = cv2.resize(body_image, (body_image.shape[1]*3, body_image.shape[0]))
 
             # Convert the head image to grayscale
             gray_head = cv2.cvtColor(head_image, cv2.COLOR_BGR2GRAY)
@@ -48,44 +41,73 @@ class CreateAvatar(viewsets.ModelViewSet):
             # Check if a face is detected
             if len(faces) > 0:
                 face = faces[0]  # Assuming only one face is detected
-
                 # Get the facial landmarks for the face region
                 landmarks = predictor(gray_head, face)
-
-                # Extract coordinates of the head region
-                head_left = landmarks.part(0).x
+                
                 head_top = landmarks.part(19).y
                 head_right = landmarks.part(16).x
+                head_right = landmarks.part(16).x
                 head_bottom = landmarks.part(8).y
+                # Extract coordinates of the head region
+                # Extract coordinates of the head region
+                head_left = landmarks.part(0).x
+                head_bottom = landmarks.part(8).y
+
+                # Adjust the head_top coordinate to create more space for the head top
+                head_height = head_bottom - head_top
+                extra_space_percentage = 0.1  # Adjust as needed
+                extra_space = int(head_height * extra_space_percentage)
+                head_top -= extra_space
+
+                # Ensure head_top does not go below 0
+                head_top = max(0, head_top)
+                # head_left = landmarks.part(0).x
+                # head_top = landmarks.part(19).y
+                # head_right = landmarks.part(16).x
+                # head_bottom = landmarks.part(8).y
 
                 # Crop the head region from the head image
                 cropped_head = head_image[head_top:head_bottom, head_left:head_right]
 
-                # Resize the cropped head to match the height of the body's head region
-                body_head_height, body_head_width, _ = body_image.shape
-                resized_head = cv2.resize(cropped_head, (body_head_width, body_head_height))
+                # Calculate the percentage for padding
+                padding_percentage = 0.1
+                padding_height = int(cropped_head.shape[0] * padding_percentage)
 
-                # Concatenate the resized head and body images vertically
-                combined_image = np.concatenate((resized_head, body_image), axis=0)
+                # Calculate the new head height with a 2 percent increase
+                new_head_height = int(cropped_head.shape[0] * 1.02)
 
-                # Create a blue background image with higher width and height
-                background_height = combined_image.shape[0] + 200  # Add 200 pixels of height for blue background
-                background_width = combined_image.shape[1] + 200   # Add 200 pixels of width for blue background
-                blue_background = np.full((background_height, background_width, 3), (255, 0, 0), dtype=np.uint8)  # Create blue background
+                # Calculate the new head width with a 2 percent increase
+                new_head_width = int(cropped_head.shape[1] * 1.02)
 
-                # Calculate the position to paste the concatenated images onto the blue background
-                start_x = 100  # Offset for the left side of the blue background
-                start_y = 100  # Offset for the top side of the blue background
+                # Resize the cropped head to fit into the background with padding
+                resized_head = cv2.resize(cropped_head, (new_head_width, new_head_height))
 
-                # Paste the concatenated images onto the blue background
-                blue_background[start_y:start_y+combined_image.shape[0], start_x:start_x+combined_image.shape[1]] = combined_image
+                # Create a white background with the same size as the body image
+                white_background = np.full((body_image.shape[0], body_image.shape[1], 3), (255, 255, 255), dtype=np.uint8)
 
-                # Display the result
-                cv2.imwrite("current.png", blue_background)
-                cv2.waitKey(0)
-                cv2.destroyAllWindows()
+                # Calculate the coordinates to place the head image at the center of the white background with padding
+                bg_center_x = white_background.shape[1] // 2
+                head_center_x = resized_head.shape[1] // 2
+                start_x = bg_center_x - head_center_x
+                end_x = start_x + resized_head.shape[1]
+                start_y = white_background.shape[0] - resized_head.shape[0]  # Placing at the bottom
+                end_y = white_background.shape[0]  # Place at the bottom
 
+                # Place the resized head onto the white background with padding
+                white_background[start_y:end_y, start_x:end_x] = resized_head
+
+                # Combine the resized head and body images vertically
+                combined_image = np.concatenate((white_background, body_image), axis=0)
+
+                # Save the result
+                image_path = os.path.join(settings.MEDIA_ROOT, 'current.png')
+                cv2.imwrite(image_path, combined_image)
+
+                # Construct the URL of the saved image
+                image_url = request.build_absolute_uri(settings.MEDIA_URL + 'current.png')
+
+                return Response({"status": True, "image_url": image_url})
             else:
-                print("No face detected in the input head image.")
-
-            return HttpResponseRedirect("https://unn.edu.ng")
+                return Response({"status": False, "message": "No face detected in the input head image."})
+        else:
+            return Response({"status": False, "message": "Invalid request."})
