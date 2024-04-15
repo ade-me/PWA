@@ -1,5 +1,4 @@
 from rembg import remove
-import cv2
 import easygui
 from PIL import Image
 

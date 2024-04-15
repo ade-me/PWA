@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'core_app_root',
+    'core_app_root.avatar_creation'
 ]
 
 MIDDLEWARE = [
