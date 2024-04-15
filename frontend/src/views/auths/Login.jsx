@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { VisibilityOffRounded, VisibilityRounded } from '@mui/icons-material';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 
 function Login() {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [data, setData] = useState({
     email: '',
@@ -34,7 +35,7 @@ function Login() {
       }
     const { email, password } = data;
     try {
-      const response = await axios.post('/login', {
+      const response = await axios.post('https://pwa-backend-rosy.vercel.app/login', {
         email,
         password,
       });
@@ -46,7 +47,7 @@ function Login() {
           password: '',
         });
         toast.success('Login Successful!');
-        // Redirect to home page after successful login
+        navigate("/home")
       }
     } catch (error) {
       toast.error('Login failed. Please try again.', error);

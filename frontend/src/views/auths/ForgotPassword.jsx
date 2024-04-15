@@ -20,7 +20,7 @@ function ForgotPassword() {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (regex.test(email)) {
             // Valid email, proceed to call API
-            axios.post('https://api.example.com/sendOTP', { email: email })
+            axios.post('https://pwa-backend-rosy.vercel.app/forgot-password', { email: email })
                 .then(() => {
                     // If API call succeeds, show OTP input
                     setShowOtpInput(true);
@@ -39,10 +39,9 @@ function ForgotPassword() {
     }
     
     const onOEmailSubmit = (otp) =>{
-        axios.post('https://api.example.com/verifyOTP', { otp: otp, email: email })
+        axios.post('https://pwa-backend-rosy.vercel.app/verify-otp', { otp: otp, email: email })
             .then(response => {
                 if (response.data.valid === true) {
-                    // OTP entered by the user matches the one sent by the API
                     console.log("Correct OTP");
                     // if the otp is correct then redirect user to a new password setup page
                     // history.push('/reset-password');
