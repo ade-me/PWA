@@ -30,4 +30,5 @@ opencv-python
 dlib
 numpy
 opencv-python
+dlib-19.24.4.tar.gz
 build
