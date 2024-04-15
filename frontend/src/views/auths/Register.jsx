@@ -12,8 +12,7 @@ function Register() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    password: '',
-    confirmPassword: ''
+    password: ''
   });
 
   // Password visibility toggle
@@ -34,35 +33,37 @@ function Register() {
     });
   };
 
-  // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ // Handle form submission
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Check if any field is empty
-    if (!formData.fullName || !formData.email || !formData.password || !formData.confirmPassword) {
-      toast.error('Please fill in all fields');
-      return;
-    }
+  // Checking if any field is empty
+  if (!formData.fullName || !formData.email || !formData.password || !formData.confirmPassword) {
+    toast.error('Please fill in all fields');
+    return;
+  }
 
-    // Check if password and confirm password match
-    if (formData.password !== formData.confirmPassword) {
-      toast.error('Password and Confirm Password do not match');
-      return;
-    }
+  // Checking if password and confirm password match
+  if (formData.password !== formData.confirmPassword) {
+    toast.error('Password and Confirm Password do not match');
+    return;
+  }
 
-    try {
-      // Send registration data to the backend
-      const response = await axios.post('/register', formData);
-      toast.success('Registration successful:', response.data)
-      console.log('Registration successful:', response.data);
-      // redirect the user to another page upon successful registration
+  try {
+    // Sends registration data to the backend
+    const response = await axios.post('https://pwa-backend-rosy.vercel.app/signup', formData);
+    if (response.status === 200) {
+      toast.success('Registration successful');
+      // redirects the user to home page upon successful registration
       navigate('/login');
-    } catch (error) {
-      console.error('Registration failed:', error);
-      // show error message to the user
-      toast.error('Registration failed:', error)
+    } else {
+      toast.error('Registration failed');
     }
-  };
+  } catch (error) {
+    toast.error(error.response?.data?.error || 'Email already exist');
+  }
+};
+
 
   return (
     <section className="flex items-center justify-center h-screen bg-white w-screen">
