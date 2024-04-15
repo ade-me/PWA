@@ -30,3 +30,4 @@ opencv-python
 dlib
 numpy
 opencv-python
+build
