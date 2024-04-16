@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Home from '../homepage/Home';
 import { ImHome } from "react-icons/im";
 import { FaSquarePlus } from "react-icons/fa6";
-import PostIngModal from './PostIngModal';
+import PostingModal from './PostingModal';
 import './TestStyles.css';
 
 function HomeScreen() {
@@ -120,7 +120,7 @@ function TabNavigator() {
         {selectedTab === 'Home' && <HomeScreen />}
         {selectedTab === 'Search' && <SearchScreen />}
         {/* Renders modal */}
-        <PostIngModal isOpen={isModalOpen} onClose={closeModal} />
+        <PostingModal isOpen={isModalOpen} onClose={closeModal} />
         {selectedTab === 'Chats' && <ChatsScreen />}
         {selectedTab === 'Profile' && <ProfileScreen />}
       </div>

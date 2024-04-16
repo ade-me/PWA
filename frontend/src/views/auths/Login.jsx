@@ -82,6 +82,7 @@ function Login() {
             </div>
             <button type="submit" className="Signin-socials-btn w-full bg-gray-300 mb-6">Sign in</button>
             <p className="text-1xl">Do not have an account? &nbsp;<Link to="/register" className="font-bold">Sign Up</Link></p>
+            <p className="text-1xl">Test the home page &nbsp;<Link to="/home" className="font-bold">Sign Up</Link></p>
           </form>
         </div>
       </div>
