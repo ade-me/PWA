@@ -60,7 +60,7 @@ const handleSubmit = async (e) => {
       toast.error('Registration failed');
     }
   } catch (error) {
-    toast.error(error.response?.data?.error || 'Email already exist');
+    toast.error(error.response?.formData?.error || 'Email already exist');
   }
 };
 
