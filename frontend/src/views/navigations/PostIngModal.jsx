@@ -109,7 +109,7 @@ function PostingModal({ isOpen, onClose }) {
                             <div className='Caption-box flex items-center justify-between h-[2.5rem] w-[100%]'>
                                 <input value={inputValue}
                                     onChange={(e) => setInputValue(e.target.value)}
-                                    className='text-[#c6c6c6] h-[2.5rem] w-[90%] bg-transparent pl-3 pr-3'
+                                    className='text-[#c6c6c6] h-[100%] w-[90%] bg-transparent pl-3 pr-3'
                                     type='text'
                                     placeholder='Write your Caption...'
                                 />

@@ -36,6 +36,9 @@ html {
   .Info-box{
     height: 6rem;
   }
+  .Caption-box{
+    height: 3.1rem;
+  }
 }
 @media screen and (max-width: 320px) {
   html {
