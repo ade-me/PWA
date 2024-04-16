@@ -7,7 +7,7 @@ import cv2
 import dlib
 import numpy as np
 import os
-
+from rembg import remove
 class CreateAvatar(viewsets.ModelViewSet):
     http_method_names = ['post']
     serializer_class = CreateAvatar
@@ -21,7 +21,7 @@ class CreateAvatar(viewsets.ModelViewSet):
             # Load pre-trained face detector from dlib
             detector = dlib.get_frontal_face_detector()
             # Load pre-trained facial landmark predictor
-            predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+            predictor = dlib.shape_predictor("shape_predictor_81_face_landmarks.dat")
 
             # Read the uploaded image
             image_file = serializer.validated_data['file']
@@ -101,8 +101,19 @@ class CreateAvatar(viewsets.ModelViewSet):
 
                 # Save the result
                 image_path = os.path.join(settings.MEDIA_ROOT, 'current.png')
-                cv2.imwrite(image_path, combined_image)
+                
+                
 
+                
+                from rembg import remove
+                import cv2
+
+                input_path = combined_image
+                output_path = 'output.png'
+
+                input = cv2.imread(input_path)
+                output = remove(input)
+                cv2.imwrite(output_path, output)
                 # Construct the URL of the saved image
                 image_url = request.build_absolute_uri(settings.MEDIA_URL + 'current.png')
 
@@ -111,3 +122,4 @@ class CreateAvatar(viewsets.ModelViewSet):
                 return Response({"status": False, "message": "No face detected in the input head image."})
         else:
             return Response({"status": False, "message": "Invalid request."})
+

@@ -30,5 +30,7 @@ opencv-python
 # dlib
 numpy
 opencv-python
-dlib-19.24.4.tar.gz
+# dlib-19.24.4.tar.gz
+dlib-19.24.1-cp311-cp311-win_amd64
 build
+simple-background-remover==1.0.1

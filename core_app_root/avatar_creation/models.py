@@ -4,3 +4,7 @@ from django.db import models
 class FileUploadModel(models.Model):
     file_name=models.CharField(max_length=2000,null=True,blank=True)
     file=models.FileField(upload_to='image_media')
+
+class FileEditModel(models.Model):
+    file_name=models.CharField(max_length=2000,null=True,blank=True)
+    file=models.FileField(upload_to='image_media')
