@@ -101,19 +101,9 @@ class CreateAvatar(viewsets.ModelViewSet):
 
                 # Save the result
                 image_path = os.path.join(settings.MEDIA_ROOT, 'current.png')
-                
-                
+               
 
                 
-                from rembg import remove
-                import cv2
-
-                input_path = combined_image
-                output_path = 'output.png'
-
-                input = cv2.imread(input_path)
-                output = remove(input)
-                cv2.imwrite(output_path, output)
                 # Construct the URL of the saved image
                 image_url = request.build_absolute_uri(settings.MEDIA_URL + 'current.png')
 
