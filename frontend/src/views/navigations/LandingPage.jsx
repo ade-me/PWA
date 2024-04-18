@@ -4,6 +4,7 @@ import { ImHome } from "react-icons/im";
 import { FaSquarePlus } from "react-icons/fa6";
 import PostingModal from './PostingModal';
 import './TestStyles.css';
+import Profile from '../profile/Profile';
 
 function HomeScreen() {
   return (
@@ -32,7 +33,7 @@ function ChatsScreen() {
 function ProfileScreen() {
   return (
     <div style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <h2>Profile!</h2>
+      <Profile/>
     </div>
   );
 }

@@ -55,7 +55,7 @@ function Posts() {
             />
             {/* Overlay */}
             <div className="absolute inset-0 flex flex-col justify-between items-center px-4 py-2">
-              <div className='w-[100%] h-[20px] bg-red-500'></div>
+              <div className='w-[100%] h-[20px]'></div>
 
               <div className='flex items-center w-[17rem] justify-between'>
                 {/* Like button and count */}
@@ -138,7 +138,7 @@ function Posts() {
                           <img className='Avatar' src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
                         </div>
                         <div className='flex flex-col'>
-                          <h3 className='text-xl font-bold'>User Name</h3>
+                          <h3 className='text-[16px] font-bold'>User Name</h3>
                           <span>{comment.text}</span>
                         </div>
                       </div>
@@ -156,6 +156,7 @@ function Posts() {
                       </div>
                       <button className='Reply-btn' onClick={() => setReplyingTo(index)}>Reply</button>
                     </div>
+                    
                     {/* Replies */}
                     {comment.replies && comment.replies.map((reply, replyIndex) => (
                       <div key={replyIndex} className='User-name-Icon-container flex items-center justify-between w-[100%] pl-10 mt-4'>
