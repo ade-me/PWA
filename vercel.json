@@ -12,6 +12,14 @@
       "config": {
         "distDir": "staticfiles_build"
       }
+    },
+    {
+      "src": "install_pip.sh",
+      "use": "@vercel/now-builders",
+      "config": {
+        "maxLambdaSize": "1000mb",
+        "buildCommand": "./install_pip.sh"
+      }
     }
   ],
   "routes": [
