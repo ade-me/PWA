@@ -32,7 +32,7 @@ function ChatsScreen() {
 
 function ProfileScreen() {
   return (
-    <div style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ justifyContent: 'center', alignItems: 'center' }}>
       <Profile/>
     </div>
   );

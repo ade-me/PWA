@@ -31,7 +31,7 @@ function Posts() {
     }
   };
   return (
-    <ul className='h-[calc(100vh-150px)] w-[100%] flex flex-col items-center pt-70px pb-10px gap-3'>
+    <ul className='w-[100%] flex flex-col items-center pt-70px pb-10px gap-3'>
         <li className='Post-container w-[100%] p-3 flex flex-col gap-2 rounded-[7px]'>
           <div className='User-name-Icon-container flex items-center justify-between w-[100%]'>
             <div className='flex items-center gap-2'>
