@@ -12,9 +12,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+from cv2 import MEDIA_FORMAT_BGR
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -23,31 +24,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+s8e6shze-j)eotl7m40ly+kdwh)1f2qmwba3go+ko!=m7um^a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh','*']
-
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '*']
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework.authtoken',
-    'rest_framework_simplejwt',
-    'drf_yasg',
-    'dj_rest_auth',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'core_app_root',
-    'core_app_root.avatar_creation'
+    'django.contrib.admin', 'django.contrib.auth',
+    'django.contrib.contenttypes', 'django.contrib.sessions',
+    'django.contrib.messages', 'django.contrib.staticfiles', 'rest_framework',
+    'rest_framework.authtoken', 'rest_framework_simplejwt', 'drf_yasg',
+    'dj_rest_auth', 'allauth', 'allauth.account', 'allauth.socialaccount',
+    'core_app_root', 'core_app_root.avatar_creation'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +72,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'avatar_colab.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -96,15 +85,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER':'postgres.idpabuhgcwhdpgjigaev',
-        'PASSWORD':'Kelechi1999!',
-        'PORT':'5432 ',
-        'HOST':'aws-0-eu-central-1.pooler.supabase.com'
+        'USER': 'postgres.idpabuhgcwhdpgjigaev',
+        'PASSWORD': 'Kelechi1999!',
+        'PORT': '5432 ',
+        'HOST': 'aws-0-eu-central-1.pooler.supabase.com'
     }
 }
-# user=postgres.idpabuhgcwhdpgjigaev 
+# user=postgres.idpabuhgcwhdpgjigaev
 # password=[YOUR-PASSWORD]
-# host=aws-0-eu-central-1.pooler.supabase.com port=5432 
+# host=aws-0-eu-central-1.pooler.supabase.com port=5432
 # dbname=postgres
 
 # Password validation
@@ -112,19 +101,22 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -137,14 +129,17 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 import os
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR/'static')]
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build','static')
+# STATICFILES_DIRS = [os.path.join(BASE_DIR/'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

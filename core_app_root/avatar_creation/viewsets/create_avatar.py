@@ -11,10 +11,10 @@ from rembg import remove
 class CreateAvatar(viewsets.ModelViewSet):
     http_method_names = ['post']
     serializer_class = CreateAvatar
-    
+
     def get_queryset(self):
         return super().get_queryset()
-    
+
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
@@ -43,7 +43,7 @@ class CreateAvatar(viewsets.ModelViewSet):
                 face = faces[0]  # Assuming only one face is detected
                 # Get the facial landmarks for the face region
                 landmarks = predictor(gray_head, face)
-                
+
                 head_top = landmarks.part(19).y
                 head_right = landmarks.part(16).x
                 head_right = landmarks.part(16).x
@@ -101,11 +101,11 @@ class CreateAvatar(viewsets.ModelViewSet):
 
                 # Save the result
                 image_path = os.path.join(settings.MEDIA_ROOT, 'current.png')
-               
 
-                
+
+                cv2.imwrite('current.png',combined_image)
                 # Construct the URL of the saved image
-                image_url = request.build_absolute_uri(settings.MEDIA_URL + 'current.png')
+                image_url = "https://replit.com/@Christiankel/PWA#current.png"
 
                 return Response({"status": True, "image_url": image_url})
             else:
