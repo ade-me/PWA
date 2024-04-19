@@ -14,11 +14,10 @@
       }
     },
     {
-      "src": "install_pip.sh",
-      "use": "@vercel/now-builders",
+      "src": "install_dependencies.sh",
+      "use": "@vercel/now-run",
       "config": {
-        "maxLambdaSize": "1000mb",
-        "buildCommand": "./install_pip.sh"
+        "maxLambdaSize": "1000mb"
       }
     }
   ],
