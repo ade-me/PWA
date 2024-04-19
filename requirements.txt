@@ -31,7 +31,7 @@ opencv-python
 numpy
 opencv-python
 # dlib-19.24.4.tar.gz
-dlib-19.24.1-cp311-cp311-win_amd64
+dlib-binary
 build
 simple-background-remover==1.0.1
 psycopg2-binary
