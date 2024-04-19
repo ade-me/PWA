@@ -92,7 +92,7 @@ function Profile() {
                 </div>
             </div>
             <div className='h-[50vh]'>
-            <div className='TESTEST flex items-center justify-center gap-[10rem] mb-3'>
+            <div className='TESTEST flex items-center justify-center gap-[6rem] mb-3'>
               <button className={activeTab === 'tab1' ? 'active-tab-1' : ''} onClick={() => handleTabClick('tab1')}>120 POSTS</button>
               <button className={activeTab === 'tab2' ? 'active-tab-2' : ''} onClick={() => handleTabClick('tab2')}>232 MEDIA</button>
             </div>
