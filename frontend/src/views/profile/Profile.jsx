@@ -116,7 +116,7 @@ function Profile() {
                 />
             </div>
       
-            <ul className="h-[67vh] tab-content-1" style={{ display: activeTab === 'tab1' ? 'block' : 'none' }}>
+            <ul className="h-[65vh] tab-content-1" style={{ display: activeTab === 'tab1' ? 'block' : 'none' }}>
               {/* Content for (posts) */}
                       <li className='Post-container w-[100%] p-3 flex flex-col gap-2 rounded-[7px]'>
                         <div className='User-name-Icon-container flex items-center justify-between w-[100%]'>

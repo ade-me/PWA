@@ -39,6 +39,9 @@ html {
   html {
     font-size: 95%;
   }
+  .tab-content-1{
+    height: 67vh;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -50,6 +53,9 @@ html {
   }
   .Caption-box{
     height: 3.1rem;
+  }
+  .tab-content-1{
+    height: 52vh;
   }
 }
 @media screen and (max-width: 320px) {
