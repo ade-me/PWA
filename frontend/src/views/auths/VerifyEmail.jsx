@@ -57,8 +57,8 @@ function VerifyEmail({ length = 4, onEmailSubmit = () => {} }) {
     };
 
     return (
-        <section className="flex items-center justify-center h-screen bg-white w-screen flex-col">
-            <div className="Social-Logins-container">
+        <section className="Welcome-Screen h-screen bg-gray-300 w-screen flex-col">
+            <div className="Social-Logins-container h-[100%] flex items-center justify-center bg-white p-5">
                 <div className="Welcome pt-5 flex flex-col items-center justify-center">
                     <h1 className="text-black-500 text-center text-2xl md:text-3xl mb-5 font-bold">Verify Your Email</h1>
                     <form className="Socials-box-Two w-full h-auto flex items-center justify-center mb-3 gap-4">

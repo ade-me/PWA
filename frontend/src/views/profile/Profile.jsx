@@ -69,7 +69,7 @@ function Profile() {
                         </div>
                     </div>
                     <div className='flex gap-3 pl-6 h-[1.5rem] items-center'>
-                        <div className='flex bg-gray-400 h-[30px] w-[7rem] p-1 items-center gap-2 rounded-[20px]'>
+                        <div className='flex bg-gray-400 h-[30px] w-[7.3rem] p-1 items-center gap-2 rounded-[20px]'>
                             <span className='w-[25px] h-[25px] bg-white flex items-center justify-center rounded-[50%]'>
                                 <FaHeart/>
                             </span>
@@ -92,7 +92,7 @@ function Profile() {
                 </div>
             </div>
             <div className='h-[50vh]'>
-            <div className='TESTEST flex items-center justify-center gap-[10rem] mb-3'>
+            <div className='TESTEST flex items-center justify-center gap-[6rem] mb-3'>
               <button className={activeTab === 'tab1' ? 'active-tab-1' : ''} onClick={() => handleTabClick('tab1')}>120 POSTS</button>
               <button className={activeTab === 'tab2' ? 'active-tab-2' : ''} onClick={() => handleTabClick('tab2')}>232 MEDIA</button>
             </div>
@@ -116,7 +116,7 @@ function Profile() {
                 />
             </div>
       
-            <ul className="h-[67vh] tab-content-1" style={{ display: activeTab === 'tab1' ? 'block' : 'none' }}>
+            <ul className="h-[65vh] tab-content-1" style={{ display: activeTab === 'tab1' ? 'block' : 'none' }}>
               {/* Content for (posts) */}
                       <li className='Post-container w-[100%] p-3 flex flex-col gap-2 rounded-[7px]'>
                         <div className='User-name-Icon-container flex items-center justify-between w-[100%]'>

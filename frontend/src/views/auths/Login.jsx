@@ -55,8 +55,8 @@ function Login() {
   };
 
   return (
-    <section className="flex items-center justify-center h-screen bg-white w-screen">
-      <div className="Social-Logins-container">
+    <section className="Welcome-Screen h-screen bg-gray-300 w-screen">
+      <div className="Social-Logins-container h-[100%] flex items-center justify-center bg-white p-5">
         <div className="Welcome pt-5 flex flex-col items-center justify-center">
           <h1 className="text-black-500 text-center text-3xl md:text-3xl mb-5 font-bold">Welcome</h1>
           <p className="text-center text-black-200 text-1xl md:text-1xl mb-5">Sign in to continue</p>
