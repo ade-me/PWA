@@ -8,7 +8,7 @@ import Profile from '../profile/Profile';
 
 function HomeScreen() {
   return (
-    <div className='flex items-center justify-center w-screen h-screen bg-white'>
+    <div>
       <Home/>
     </div>
   );
@@ -96,8 +96,8 @@ function TabNavigator() {
   }, []);
 
   return (
-    <div className='flex flex-col w-screen h-screen items-center justify-center'>
-      <div className="shadowEffect-footer bottom-0 fixed flex items-center justify-between w-screen h-15 bg-white pl-8 pr-8 pt-3 pb-3 gap-1">
+    <div className='Home-Screen w-screen h-screen'>
+      <div className="shadowEffect-footer w-screen h-15 bg-white pl-8 pr-8 pt-3 pb-3 gap-1">
         <button onClick={() => navigateTo('Home')} className={selectedTab === 'Home' ? 'active-tab' : ''}><ImHome className='text-gray-700 text-3xl font-bold'/></button>
         <button onClick={() => navigateTo("Search")} className={selectedTab === 'Search' ? 'active-tab' : ''}>
           <svg className='text-gray-700 font-bold' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +131,7 @@ function TabNavigator() {
 
 export default function LandingPage() {
   return (
-    <div className='w-screen h-screen bg-gray-200'>
+    <div className='Display-Tabs-Screen w-screen h-screen bg-gray-200'>
       <TabNavigator/>
     </div>
   );

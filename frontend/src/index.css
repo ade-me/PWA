@@ -29,15 +29,74 @@ html {
   font-size: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 100%;
+  }
+  .Navbar{
+    width: 100%;
+  }
+  /* .Display-Tabs-Screen{
+    
+  } */
+  .Welcome-Screen{
+    display: flex;
+    align-items: flex-start;
+  }
+  .Social-Logins-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+  }
+  .Home-Screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .shadowEffect-footer{
+    display: flex;
+    flex-direction: column;
+    background: red;
+    height: 100vh;
+    width: 30rem;
+  }
+  .Home-page{
+    width: 40rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   html {
     font-size: 95%;
+  }
+  .Welcome-Screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Social-Logins-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .Home-Screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .shadowEffect-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
   .tab-content-1{
     height: 67vh;

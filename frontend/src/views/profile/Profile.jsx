@@ -69,7 +69,7 @@ function Profile() {
                         </div>
                     </div>
                     <div className='flex gap-3 pl-6 h-[1.5rem] items-center'>
-                        <div className='flex bg-gray-400 h-[30px] w-[7rem] p-1 items-center gap-2 rounded-[20px]'>
+                        <div className='flex bg-gray-400 h-[30px] w-[7.3rem] p-1 items-center gap-2 rounded-[20px]'>
                             <span className='w-[25px] h-[25px] bg-white flex items-center justify-center rounded-[50%]'>
                                 <FaHeart/>
                             </span>
