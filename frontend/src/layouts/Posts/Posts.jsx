@@ -32,19 +32,19 @@ function Posts() {
   };
   return (
     <ul className='w-[100%] flex flex-col items-center pt-70px pb-10px gap-3'>
-        <li className='Post-container w-[100%] p-3 flex flex-col gap-2 rounded-[7px]'>
+        <li className='Post-container w-[100%] p-3 flex flex-col gap-2 rounded-[7px] bg-white'>
           <div className='User-name-Icon-container flex items-center justify-between w-[100%]'>
             <div className='flex items-center gap-2'>
               <div className='Avatar-container w-[4.5rem] h-[4.5rem] rounded-[50%] p-1 flex items-center justify-center'>
                 <img className='Avatar' src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
               </div>
               <div className='flex flex-col'>
-                <h3 className='text-xl font-bold'>User Name</h3>
-                <span>Location</span>
+                <h3 className='text-[15px] font-bold'>User Name</h3>
+                <span className='text-[12px]'>Location</span>
               </div>
             </div>
             <div className='h-[3rem]'>
-              <p className='top-0 right-0'>4:08pm</p>
+              <p className='top-0 right-0 text-[13px]'>4:08pm</p>
             </div>
           </div>
           <div className='relative w-[100%] h-[18rem] bg-[#c6c6c6] rounded'>
