@@ -7,7 +7,7 @@
 .Btns>button{
     border-radius: 8px;
     border: 2px solid black;
-    width: 10rem;
+    width: 10.4rem;
 }
 .Btns>button:nth-child(1){
     background: #000;

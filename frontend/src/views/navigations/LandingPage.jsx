@@ -97,7 +97,7 @@ function TabNavigator() {
 
   return (
     <div className='Home-Screen w-screen h-screen'>
-      <div className="shadowEffect-footer w-screen h-15 bg-white pl-8 pr-8 pt-3 pb-3 gap-1">
+      <div className="shadowEffect-footer bg-white pl-8 pr-8 pt-3 pb-3 gap-1">
         <button onClick={() => navigateTo('Home')} className={selectedTab === 'Home' ? 'active-tab' : ''}><ImHome className='text-gray-700 text-3xl font-bold'/></button>
         <button onClick={() => navigateTo("Search")} className={selectedTab === 'Search' ? 'active-tab' : ''}>
           <svg className='text-gray-700 font-bold' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
