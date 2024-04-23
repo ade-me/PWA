@@ -16,7 +16,7 @@ function HomeScreen() {
 
 function SearchScreen() {
   return (
-    <div style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <div>
       <h2>Search for your friends!</h2>
     </div>
   );
@@ -24,7 +24,7 @@ function SearchScreen() {
 
 function ChatsScreen() {
   return (
-    <div style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <div>
       <h2>Chat your friends!</h2>
     </div>
   );
@@ -32,7 +32,7 @@ function ChatsScreen() {
 
 function ProfileScreen() {
   return (
-    <div style={{ justifyContent: 'center', alignItems: 'center' }}>
+    <div>
       <Profile/>
     </div>
   );
@@ -96,7 +96,7 @@ function TabNavigator() {
   }, []);
 
   return (
-    <div className='Home-Screen w-screen h-screen'>
+    <div className='Home-Screen h-screen'>
       <div className="shadowEffect-footer bg-white pl-8 pr-8 pt-3 pb-3 gap-1">
         <button onClick={() => navigateTo('Home')} className={selectedTab === 'Home' ? 'active-tab' : ''}><ImHome className='text-gray-700 text-3xl font-bold'/></button>
         <button onClick={() => navigateTo("Search")} className={selectedTab === 'Search' ? 'active-tab' : ''}>
@@ -117,7 +117,7 @@ function TabNavigator() {
           </svg>
         </button>
       </div>
-      <div className='flex gap-5'>
+      <div className='Screen-Displayer'>
         {selectedTab === 'Home' && <HomeScreen />}
         {selectedTab === 'Search' && <SearchScreen />}
         {/* Renders modal */}
@@ -131,7 +131,7 @@ function TabNavigator() {
 
 export default function LandingPage() {
   return (
-    <div className='Display-Tabs-Screen w-screen h-screen bg-gray-200'>
+    <div className='Display-Tabs-Screen h-screen bg-gray-200'>
       <TabNavigator/>
     </div>
   );

@@ -11,231 +11,269 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Resetting outline and border for input and textarea */
 input, textarea{
   outline: none;
   border: none;
 }
+
 input:focus, textarea:focus {
   outline: none;
   border: none;
   border-width: none;
 }
-/* input, textarea{
-  outline: none;
-  border: none;
-} */
 
-html {
-  font-size: 100%;
-}
-/* @media screen and (min-width: 900px){
-  html {
-    font-size: 100%;
-  }
-  .Navbar{
-    width: 35rem;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
-  }
-  .Home-Screen{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .shadowEffect-footer{
-    display: flex;
-    flex-direction: column;
-    background: red;
-    height: 200vh;
-    width: 15rem;
-    gap: 3rem;
-  }
-  .Home-page{
-    width: 35rem;
-    background: white;
-  }
-  .Home-page>section{
-    width: 100%;
-    height: calc(100vh - 130px);
-    padding-top: 20px;
-  }
-  .Profile-container{
-    width: 35rem;
-  }
-  .Profile-Nav{
-    width: 35rem;
-  }
-} */
-
+/* Adjustments for various screen sizes */
 @media screen and (min-width: 900px) {
   html {
     font-size: 100%;
   }
-  
-  /* .Display-Tabs-Screen{
-    
-  } */
-  .Welcome-Screen{
+
+  .Welcome-Screen {
     display: flex;
     align-items: flex-start;
   }
-  .Social-Logins-container{
+
+  .Social-Logins-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     height: 100vh;
   }
-  .Home-Screen{
+
+  .Home-Screen {
     display: flex;
     gap: 10rem;
+    background: #fff;
   }
-  .shadowEffect-footer{
+
+  .shadowEffect-footer {
     display: flex;
     flex-direction: column;
-    background: red;
-    height: 70vh;
+    background: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
     width: 15rem;
     gap: 3rem;
   }
-  .Home-cover{
+
+  .Home-cover {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
-  .Home-page{
+
+  .Home-page {
+    margin-left: 24rem;
     width: 28rem;
     background: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
   }
-  .Navbar{
+
+  .Navbar {
     width: 27.8rem;
   }
-  .Empty-display{
+
+  .Empty-display {
     width: 10rem;
   }
-  .Home-page>section{
+
+  .Home-page > section {
     width: 100%;
     height: calc(100vh - 130px);
-    padding-top: 20px;
+    padding-top: 0px;
   }
-  .Profile-container{
-    width: 35rem;
+
+  .Profile-container {
+    margin-left: 24rem;
+    width: 28rem;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
   }
-  .Profile-Nav{
-    width: 35rem;
+
+  .Profile-Nav {
+    width: 27.8rem;
+  }
+
+  .Profile-box-container {
+    width: 100%;
+  }
+  .Post-Modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .Post-Modal{
+    width: 26rem;
   }
 }
+@media screen and (min-width: 600px){
+  .shadowEffect-footer {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    width: 15rem;
+    gap: 3rem;
+  }
+}
+
 @media screen and (max-width: 889px) {
   html {
     font-size: 95%;
   }
-  
-  /* .Display-Tabs-Screen{
-    
-  } */
-  .Welcome-Screen{
+
+  .Welcome-Screen {
     display: flex;
     align-items: flex-start;
   }
-  .Social-Logins-container{
+
+  .Social-Logins-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     height: 100vh;
   }
-  .Home-Screen{
+
+  .Home-Screen {
     display: flex;
     gap: 20px;
   }
-  .shadowEffect-footer{
+
+  .shadowEffect-footer {
     display: flex;
     flex-direction: column;
-    background: red;
-    height: 70vh;
+    background: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+    position: static;
+    height: 100vh;
+    bottom: 0;
     width: 15rem;
     gap: 3rem;
   }
-  .Home-cover{
+
+  .Home-cover {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
-  .Home-page{
-    width: 35rem;
+
+  .Home-page {
+    width: 38rem;
     background: white;
   }
-  .Navbar{
-    width: 35rem;
+
+  .Navbar {
+    width: 38rem;
   }
-  .Empty-display{
+
+  .Empty-display {
     display: none;
   }
-  .Home-page>section{
+
+  .Home-page > section {
     width: 100%;
     height: calc(100vh - 130px);
     padding-top: 20px;
   }
-  .Profile-container{
-    width: 35rem;
+
+  .Profile-container {
+    width: 38rem;
   }
-  .Profile-Nav{
-    width: 35rem;
+
+  .Profile-Nav {
+    width: 38rem;
   }
+
+  .Profile-box-container {
+    width: 100%;
+  }
+  /* .Display-Tabs-Screen{
+    display: flex;
+    justify-content: space-between;
+  } */
 }
 
 @media screen and (max-width: 576px) {
   html {
     font-size: 95%;
   }
-  .Navbar{
+
+  .Screen-Displayer {
+    height: 100vh;
+  }
+
+  .Navbar {
     width: 100%;
     left: 0;
   }
-  .Profile-container{
+
+  .Profile-container,
+  .Profile-box-container {
     width: 100vw;
     background: white;
+    min-height: 100vh;
   }
-  .Profile-Nav{
-    left: 0;
+
+  .Profile-Nav {
     width: 100%;
+    height: 60px;
+    left: 0;
   }
-  .Welcome-Screen{
+
+  .Welcome-Screen {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .Social-Logins-container{
+
+  .Social-Logins-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
   }
-  .Home-Screen{
+
+  .Home-Screen {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .Home-cover{
+
+  .Home-cover {
     display: flex;
     justify-content: space-between;
     gap: 10px;
   }
-  .Home-page{
+
+  .Home-page {
     width: 100vw;
     background: white;
   }
-  .Navbar{
+
+  .Navbar {
     width: 100%;
     height: 50px;
   }
-  .Home-page>section{
+
+  .Home-page > section {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 160px);
     padding-top: 0px;
   }
-  .shadowEffect-footer{
+
+  .shadowEffect-footer {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -243,15 +281,16 @@ html {
     position: fixed;
     background: #fff;
     width: 100%;
-    height: 5.5rem;
+    height: 5.3rem;
     bottom: 0;
     left: 0;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-  .tab-content-1{
-    height: 67vh;
+
+  .tab-content-1 {
+    height: 66vh;
   }
 }
 
@@ -259,75 +298,22 @@ html {
   html {
     font-size: 75%;
   }
-  .Info-box{
+
+  .Info-box {
     height: 6rem;
   }
-  .Caption-box{
+
+  .Caption-box {
     height: 3.1rem;
   }
-  .tab-content-1{
+
+  .tab-content-1 {
     height: 52vh;
   }
 }
+
 @media screen and (max-width: 320px) {
   html {
     font-size: 70%;
   }
 }
-
-
-
-
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
-
-/* button {
-  border-radius: 25px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-/* button:hover {
-  border-color: #646cff;
-} */
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

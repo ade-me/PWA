@@ -96,8 +96,8 @@ function PostingModal({ isOpen, onClose }) {
     if (!isOpen) return null;
 
     return (
-        <section className="fixed bottom-0 left-0 w-full h-screen flex justify-center items-center bg-[#D9D9D9] bg-opacity-45 pl-7 pr-7 pb-5">
-            <form onSubmit={handleSubmit} className="bg-white rounded-[15px] shadow-lg w-screen h-[38rem] pt-5 flex flex-col justify-between">
+        <section className="Post-Modal-container fixed bottom-0 left-0 w-full h-screen flex justify-center items-center bg-[#D9D9D9] bg-opacity-45 pl-7 pr-7 pb-5">
+            <form onSubmit={handleSubmit} className="Post-Modal bg-white rounded-[15px] shadow-lg w-screen h-[38rem] pt-5 flex flex-col justify-between">
                 <div className='h-[100%] flex flex-col justify-between'>
                     <div className='h-[3rem] flex items-center justify-between pl-3 pr-3'>
                         <h1 className='text-[1.2rem] font-bold'>New Post</h1>
