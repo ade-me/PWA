@@ -5,6 +5,7 @@ import { FaSquarePlus } from "react-icons/fa6";
 import PostingModal from './PostingModal';
 import './TestStyles.css';
 import Profile from '../profile/Profile';
+import Searchs from '../search/Searchs';
 
 function HomeScreen() {
   return (
@@ -17,7 +18,7 @@ function HomeScreen() {
 function SearchScreen() {
   return (
     <div>
-      <h2>Search for your friends!</h2>
+      <Searchs/>
     </div>
   );
 }
@@ -131,7 +132,7 @@ function TabNavigator() {
 
 export default function LandingPage() {
   return (
-    <div className='Display-Tabs-Screen h-screen bg-gray-200'>
+    <div className='Display-Tabs-Screen h-screen bg-white'>
       <TabNavigator/>
     </div>
   );
