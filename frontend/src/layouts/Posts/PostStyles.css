@@ -19,7 +19,7 @@
     width: 100%;
     background-color: rgb(161, 161, 161);
 }
-.Comments-section textarea{
+.Comments-section>textarea{
     height: 40px;
     display: flex;
     align-items: center;
