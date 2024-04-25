@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useHistory from React Router
+import axios from 'axios';
 
 function ScratchAvatar() {
   const navigate = useNavigate(); // Get the history object from React Router
@@ -7,7 +8,6 @@ function ScratchAvatar() {
   // Initialize state to hold the avatar image data URL
   const [avatar, setAvatar] = useState(null);
   const [error, setError] = useState(null); // State to hold error messages
-  const [loading, setLoading] = useState(false); // State to track loading state
   const inputRef = useRef(null);
 
   const handleCapture = () => {
@@ -16,7 +16,6 @@ function ScratchAvatar() {
 
   // Function to handle image capture from the camera
   const handleImageUpload = () => {
-    setLoading(true); // Set loading state to true
     // Constraints to capture image from the front camera
     const frontCameraConstraints = {
       video: {
@@ -41,13 +40,12 @@ function ScratchAvatar() {
           .catch((error) => {
             console.error('Error accessing camera:', error);
             setError('Error accessing camera. Please try again.'); // Set error state
-            setLoading(false); // Set loading state to false
           });
       });
   };
 
   // Function to handle the obtained stream
-  const handleStream = (stream) => {
+const handleStream = (stream) => {
     const video = document.createElement('video');
     video.srcObject = stream;
     video.onloadedmetadata = () => {
@@ -65,13 +63,15 @@ function ScratchAvatar() {
           setAvatar(imageDataUrl); // Update the avatar state with the captured image data URL
           setError(null);
           sendImageToBackend(imageDataUrl); // Send image to backend
+          // Stop the video stream after capturing the image
+          stream.getTracks().forEach(track => track.stop());
         } else {
           setError('Captured image is blank. Please try again.');
-          setLoading(false); // Set loading state to false
         }
-      }, 15000);
+      }, 100);
     };
   };
+  
 
   // Function to check if the captured image is blank
   const isBlankImage = (canvas) => {
@@ -89,19 +89,39 @@ function ScratchAvatar() {
   };
 
   // Function to send image to backend
-  const sendImageToBackend = (imageDataUrl) => {
-    // Simulate sending image to backend (replace with actual backend API call)
-    setTimeout(() => {
-      setLoading(false); // Set loading state to false
-      console.log('Image sent to backend:', imageDataUrl);
-      // Navigate to another page after uploading
-      navigate('#'); // Navigate to the '/uploaded-image' route
-    }, 8000); // Simulated delay of 15 seconds
+const sendImageToBackend = (imageDataUrl) => {
+    // Convert data URL to Blob
+    fetch(imageDataUrl)
+      .then(res => res.blob())
+      .then(blob => {
+        // Create FormData object to send file
+        const formData = new FormData();
+        formData.append('avatar', blob, 'avatar.png');
+  
+        // to be Replaced with an actual backend API endpoint
+        axios.post('http://example.com/upload', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        })
+        .then(response => {
+          console.log('Image sent to backend:', response.data);
+          // Navigate to another page after uploading
+          navigate('/configurator'); // Navigate to the '/configurator' route
+        })
+        .catch(error => {
+          console.error('Error sending image to backend:', error);
+          setError('Error sending image to backend. Please try again.'); // Set error state
+        });
+      })
+      .catch(error => {
+        console.error('Error converting image data:', error);
+        setError('Error converting image data. Please try again.'); // Set error state
+      });
   };
-
+    
   return (
     <div className="avatar-generator-page flex items-center justify-center h-[100vh]">
-    {loading ? (<p className="text-black flex items-center justify-center w-[100vw] h-[100vh] bg-white">Loading...</p>) :(
       <div className="Avatar-generator-box flex flex-col items-center justify-center">
         {error && <p className="text-red-500">{error}</p>} {/* Display error message if any */}
         
@@ -128,7 +148,6 @@ function ScratchAvatar() {
           />
         </div> 
       </div>
-      )}
     </div>
   );
 }
