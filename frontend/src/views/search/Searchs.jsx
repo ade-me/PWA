@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
+// import Swipper from '../../components/swipper/Swipper';
 
 function Searchs() {
   return (
@@ -18,6 +19,10 @@ function Searchs() {
                       <input type='text' placeholder='Search for friends...' className='bg-transparent w-[70%]'/>
                   </div>
               </div>
+              {/*<div>
+                  <Swipper/>
+              </div>
+  */}
           </div>
       </section>
   )
