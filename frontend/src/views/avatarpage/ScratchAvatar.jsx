@@ -95,7 +95,7 @@ function ScratchAvatar() {
       setLoading(false); // Set loading state to false
       console.log('Image sent to backend:', imageDataUrl);
       // Navigate to another page after uploading
-      navigate('/uploaded-image'); // Navigate to the '/uploaded-image' route
+      navigate('#'); // Navigate to the '/uploaded-image' route
     }, 8000); // Simulated delay of 15 seconds
   };
 
