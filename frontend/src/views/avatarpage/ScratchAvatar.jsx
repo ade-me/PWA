@@ -1,95 +1,92 @@
-import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useHistory from React Router
+import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import * as faceapi from 'face-api.js'; // Import face-api.js for face detection
 
 function ScratchAvatar() {
-  const navigate = useNavigate(); // Get the history object from React Router
-
-  // Initialize state to hold the avatar image data URL
+  const navigate = useNavigate();
   const [avatar, setAvatar] = useState(null);
-  const [error, setError] = useState(null); // State to hold error messages
+  const [error, setError] = useState(null);
   const inputRef = useRef(null);
 
-  const handleCapture = () => {
-    handleImageUpload(); // Call handleImageUpload to open the camera
-  };
+  // Load face-api.js models when the component mounts
+  useEffect(() => {
+    Promise.all([
+      faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
+      faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+      faceapi.nets.faceRecognitionNet.loadFromUri('/models')
+    ]).catch(error => console.error('Error loading face-api models:', error));
+  }, []);
 
-  // Function to handle image capture from the camera
-  const handleImageUpload = () => {
-    // Constraints to capture image from the front camera
-    const frontCameraConstraints = {
-      video: {
-        facingMode: { exact: 'user' } // 'user' for front camera
-      }
-    };
-
-    // Constraints to capture image from the back camera
-    const backCameraConstraints = {
-      video: {
-        facingMode: { exact: 'environment' } // 'environment' for back camera
-      }
-    };
-
-    // Try to access the front camera first
-    navigator.mediaDevices.getUserMedia(frontCameraConstraints)
-      .then(handleStream)
-      .catch(() => {
-        // If front camera is not available, try accessing the back camera
-        navigator.mediaDevices.getUserMedia(backCameraConstraints)
-          .then(handleStream)
-          .catch((error) => {
-            console.error('Error accessing camera:', error);
-            setError('Error accessing camera. Please try again.'); // Set error state
-          });
-      });
-  };
-
-  // Function to handle the obtained stream
-const handleStream = (stream) => {
-    const video = document.createElement('video');
-    video.srcObject = stream;
-    video.onloadedmetadata = () => {
-      video.play();
-      setTimeout(() => {
-        const canvas = document.createElement('canvas');
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        const context = canvas.getContext('2d');
-        context.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageDataUrl = canvas.toDataURL('image/png'); // Convert canvas to data URL
-        
-        // Basic validation example: Check if the captured image is not blank
-        if (!isBlankImage(canvas)) {
-          setAvatar(imageDataUrl); // Update the avatar state with the captured image data URL
-          setError(null);
-          sendImageToBackend(imageDataUrl); // Send image to backend
-          // Stop the video stream after capturing the image
-          stream.getTracks().forEach(track => track.stop());
-        } else {
-          setError('Captured image is blank. Please try again.');
-        }
-      }, 100);
-    };
-  };
-  
-
-  // Function to check if the captured image is blank
-  const isBlankImage = (canvas) => {
-    const context = canvas.getContext('2d');
-    const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-    const pixels = imageData.data;
-
-    for (let i = 0; i < pixels.length; i += 4) {
-      if (pixels[i] !== 255 || pixels[i + 1] !== 255 || pixels[i + 2] !== 255) {
-        return false;
-      }
+  const handleCapture = async () => {
+    const isFaceDetected = await detectFace(); // Detect face before capturing
+    if (isFaceDetected) {
+      handleImageUpload(); // If face detected, capture image
+    } else {
+      setError('No face detected. Please try again.');
     }
-
-    return true;
   };
 
-  // Function to send image to backend
-const sendImageToBackend = (imageDataUrl) => {
+  const detectFace = async () => {
+    try {
+      const constraints = {
+        video: true
+      };
+
+      const stream = await navigator.mediaDevices.getUserMedia(constraints);
+      const video = document.createElement('video');
+      video.srcObject = stream;
+      video.play();
+
+      const result = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions());
+      stream.getTracks().forEach(track => track.stop());
+      return !!result;
+    } catch (error) {
+      console.error('Error detecting face:', error);
+      return false;
+    }
+  };
+
+  const handleImageUpload = async () => {
+    try {
+      const constraints = {
+        video: true
+      };
+
+      const stream = await navigator.mediaDevices.getUserMedia(constraints);
+      const video = document.createElement('video');
+      video.srcObject = stream;
+      video.play();
+
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const context = canvas.getContext('2d');
+
+      video.addEventListener('play', () => {
+        const draw = () => {
+          if (video.paused || video.ended) {
+            return;
+          }
+          context.drawImage(video, 0, 0, canvas.width, canvas.height);
+          requestAnimationFrame(draw);
+        };
+        draw();
+      });
+
+      setTimeout(() => {
+        const imageDataUrl = canvas.toDataURL('image/png');
+        setAvatar(imageDataUrl);
+        sendImageToBackend(imageDataUrl);
+        stream.getTracks().forEach(track => track.stop());
+      }, 1000);
+    } catch (error) {
+      console.error('Error capturing image:', error);
+      setError('Error capturing image. Please try again.');
+    }
+  };
+
+  const sendImageToBackend = (imageDataUrl) => {
     // Convert data URL to Blob
     fetch(imageDataUrl)
       .then(res => res.blob())
@@ -98,7 +95,7 @@ const sendImageToBackend = (imageDataUrl) => {
         const formData = new FormData();
         formData.append('avatar', blob, 'avatar.png');
   
-        // to be Replaced with an actual backend API endpoint
+        // Replace 'http://example.com/upload' with your actual backend API endpoint
         axios.post('http://example.com/upload', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
@@ -119,19 +116,19 @@ const sendImageToBackend = (imageDataUrl) => {
         setError('Error converting image data. Please try again.'); // Set error state
       });
   };
-    
+  
+
   return (
     <div className="avatar-generator-page flex items-center justify-center h-[100vh]">
       <div className="Avatar-generator-box flex flex-col items-center justify-center">
-        {error && <p className="text-red-500">{error}</p>} {/* Display error message if any */}
+        {error && <p className="text-red-500">{error}</p>}
         
         <div className="Generated-avatar-container w-[15rem] h-[15rem] bg-gray-300 rounded-[50%] mb-9">
           {avatar && (
-            <img src={avatar} alt="Generated Avatar" /> // Display the captured image
+            <img src={avatar} alt="Generated Avatar" />
           )}
         </div>
         <h1 className="mt-4 mb-9 md:flex w-[80%] items-center justify-center text-center">Take a photo and we’ll use it to create your avatar</h1>
-        {/* Replace the existing file input with the camera capture button */}
         <div className="flex flex-col items-center justify-center w-[5rem] h-[5rem] bg-white shadow-xl p-4 rounded-[50%]" onClick={handleCapture}>
           <label htmlFor="upload-input" className="w-[100%] h-[100%] bg-transparent flex items-center justify-center">
             <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
