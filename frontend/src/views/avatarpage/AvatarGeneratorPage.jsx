@@ -77,9 +77,6 @@ function AvatarGeneratorPage() {
         formData.append('avatar', blob, 'avatar.png');
 
         axios.post('http://example.com/upload', formData, {
-          headers: {
-            'Content-Type': 'multipart/form-data'
-          }
         })
         .then(response => {
           toast.success('Image sent to backend:', response.data);

@@ -97,9 +97,6 @@ function ScratchAvatar() {
   
         // Replace 'http://example.com/upload' with your actual backend API endpoint
         axios.post('http://example.com/upload', formData, {
-          headers: {
-            'Content-Type': 'multipart/form-data'
-          }
         })
         .then(response => {
           console.log('Image sent to backend:', response.data);
