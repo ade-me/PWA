@@ -12,7 +12,6 @@ function CameraInput({ onCapture }) {
   const handleChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      // Do something with the captured image
       onCapture(file);
     }
   };
