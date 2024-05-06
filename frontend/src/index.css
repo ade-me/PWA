@@ -338,10 +338,18 @@ input:hover, textarea:hover {
   .tab-content-1 {
     height: 52vh;
   }
+  .video-container {
+    width: 100vw;
+    height: 88vh;
+}
 }
 
 @media screen and (max-width: 320px) {
   html {
     font-size: 70%;
   }
+  .video-container {
+    width: 100vw;
+    height: 87vh;
+}
 }
