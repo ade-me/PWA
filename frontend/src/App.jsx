@@ -9,6 +9,7 @@ import MyWallet from './views/mywallet/MyWallet'
 import AvatarGeneratorPage from './views/avatarpage/AvatarGeneratorPage'
 import ScratchAvatar from './views/avatarpage/ScratchAvatar'
 import AvatarConfigurator from './views/avatarpage/AvatarConfigurator'
+import LikedProfiles from './views/likedprofiles/LikedProfiles'
 // import axios from "axios";
 
 // axios.defaults.baseURL = 'https://pwa-backend-rosy.vercel.app';
@@ -26,7 +27,8 @@ function App() {
         <Route path='/configurator' element={<AvatarConfigurator/>}/>
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path='/home' element={<LandingPage />} />
-        <Route path='/wallet' element={<MyWallet/>} />
+        <Route path='/wallet' element={<MyWallet />} />
+        <Route path='/liked' element={<LikedProfiles />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,9 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import SwiperCard from './SwiperCard';
+// import LikedProfiles from '../../../views/likedprofiles/LikedProfiles';
 
-function Swiper({ profiles }) {
-    const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
+function Swiper({ profiles, searchTerm }) {
+  const [shuffledProfiles, setShuffledProfiles] = useState([]);
+  const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
+  const [likedProfiles, setLikedProfiles] = useState([]);
+  const [noUserFound, setNoUserFound] = useState(false);
+
+  useEffect(() => {
+    const storedLikedProfiles = localStorage.getItem('likedProfiles');
+    if (storedLikedProfiles) {
+      try {
+        setLikedProfiles(JSON.parse(storedLikedProfiles));
+      } catch (error) {
+        console.error('Error parsing stored liked profiles:', error);
+        localStorage.removeItem('likedProfiles');
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('likedProfiles', JSON.stringify(likedProfiles));
+  }, [likedProfiles]);
+
+  useEffect(() => {
+    const shuffleArray = (array) => {
+      const shuffledArray = array.slice(); 
+      for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+      }
+      return shuffledArray;
+    };
+  
+    const filteredProfiles = searchTerm
+      ? profiles.filter(profile => profile.name.toLowerCase().includes(searchTerm.toLowerCase()))
+      : profiles;
+  
+    if (filteredProfiles.length === 0) {
+      setNoUserFound(true);
+      setShuffledProfiles([]); // Reset shuffled profiles if no user found
+    } else {
+      setNoUserFound(false);
+      setShuffledProfiles(shuffleArray(filteredProfiles));
+    }
+  }, [profiles, searchTerm]);
 
   const handlers = useSwipeable({
     onSwipedLeft: () => handleSwipe('left'),
@@ -13,26 +56,28 @@ function Swiper({ profiles }) {
   });
 
   const handleSwipe = (direction) => {
-    // Logic to handle swipe
-    if (direction === 'left') {
-      // Swipe left action
-      console.log('Left swipe');
-    } else if (direction === 'right') {
-      // Swipe right action
-      console.log('Right swipe');
+    if (direction === 'right') {
+      const likedProfile = shuffledProfiles[currentProfileIndex];
+      setLikedProfiles(prevLikedProfiles => [...prevLikedProfiles, likedProfile]);
     }
-    // Move to the next profile
-    setCurrentProfileIndex(prevIndex => prevIndex + 1);
+    setCurrentProfileIndex(prevIndex => (prevIndex + 1) % shuffledProfiles.length);
   };
+
   return (
-    <div {...handlers} className="relative">
-      {profiles.slice(currentProfileIndex, currentProfileIndex + 1).map(profile => (
-        <div key={profile.id} className="absolute top-0 left-0 w-full">
-          <SwiperCard profile={profile} />
+    <section {...handlers} className="relative">
+      {noUserFound ? (
+        <div className="text-center">No user found with this name</div>
+      ) : (
+        <div>
+          {shuffledProfiles.slice(currentProfileIndex, currentProfileIndex + 1).map(profile => (
+            <div key={profile.id} className="absolute top-0 left-0 w-full">
+              <SwiperCard profile={profile} onSwipeRight={handleSwipe} />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      )}
+    </section>
   );
 }
 
-export default Swiper
+export default Swiper;
