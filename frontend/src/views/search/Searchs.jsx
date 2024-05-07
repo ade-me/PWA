@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import Swiper from '../../components/CameraInput/Swiper/Swiper';
 import ProfilesData from './ProfilesData';
 
 function Searchs() {
@@ -16,6 +15,7 @@ function Searchs() {
     setFilteredProfiles(filtered);
   };
 
+  const Swiper = React.lazy(() => import('../../components/CameraInput/Swiper/Swiper'));
   return (
     <section className='Search-Container flex items-center justify-center h-[100vh] bg-white '>
       <div className='Search-Wrapper h-[100%] w-[100%]'>
@@ -51,9 +51,11 @@ function Searchs() {
             />
           </div>
         </div>
-        <div className='p-3 h-[80%]'>
-          <Swiper profiles={filteredProfiles} />
-        </div>
+        <React.Suspense fallback={<div className="flex items-center justify-center">Loading...</div>}>
+          <div className='p-3 h-[80%]'>
+            <Swiper profiles={filteredProfiles} />
+          </div>
+        </React.Suspense>
       </div>
     </section>
   );

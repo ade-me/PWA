@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import VideoPlayer from './VideoPlayer';
-import VideoData from './VideoData';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import VideoData from './VideoData';
 
 const Videos = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,13 +18,17 @@ const Videos = () => {
         onSwipedDown: () => handleSwipe('DOWN'),
     });
 
+    const VideoPlayer = React.lazy(() => import('./VideoPlayer'));
+
     return (
-        <section {...handlers}>
-            {VideoData.map((videoPost, index) => (
-                <div key={videoPost.id} style={{ display: index === currentIndex ? 'block' : 'none' }}>
-                    {index === currentIndex && <VideoPlayer src={videoPost.url} />}
-                </div>
-            ))}
+        <section {...handlers} className='bg-black'>
+            <React.Suspense fallback={<div>Loading...</div>}>
+                {VideoData.map((videoPost, index) => (
+                    <div key={videoPost.id} style={{ display: index === currentIndex ? 'block' : 'none' }}>
+                        {index === currentIndex && <VideoPlayer src={videoPost.url} name={videoPost.name} videocaption={videoPost.videocaption} />}
+                    </div>
+                ))}
+            </React.Suspense>
         </section>
     );
 };
