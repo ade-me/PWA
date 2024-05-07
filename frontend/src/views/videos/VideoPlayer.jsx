@@ -1,9 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './VideoPlayer.css';
-import { FaPlay } from "react-icons/fa";
-import { FaComment, FaHeart } from 'react-icons/fa6';
+import { FaPlay, FaComment, FaHeart } from 'react-icons/fa';
 
-const VideoPlayer = ({ src }) => {
+const VideoPlayer = ({ src, name, videocaption }) => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(true); // State to track if video is playing
 
@@ -46,7 +45,7 @@ const VideoPlayer = ({ src }) => {
     return (
         <section className="video-container relative">
             <video ref={videoRef} autoPlay>
-                <source src={src} type="video/mp4" />
+                <source src={src} type="video/mp4" className='w-[100%]'/>
             </video>
             <div className="controls absolute bottom-60 left-0 flex justify-between w-[100%]">
                 <button onClick={() => seekVideo(-10)}>Rewind 10s</button>
@@ -61,9 +60,9 @@ const VideoPlayer = ({ src }) => {
                         <div className='Video-Posts-UserAvatar'>
                             <img src='https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='photo'/>
                         </div>
-                        <span className='font-bold text-[14px] text-gray-300'>John Doe</span>
+                            <span className='font-bold text-[14px] text-gray-300'>{name}</span>
                     </div>
-                    <p className='text-gray-300'>New post! than..</p>
+                        <p className='text-gray-300'>{videocaption}</p>
                     <button className='Share-btn-2 text-gray-300'>Share</button>
                 </div>
                 <div className='flex flex-col h-[10rem] justify-between'>
