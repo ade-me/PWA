@@ -9,8 +9,8 @@ const Login = lazy(() => import('./views/auths/Login'));
 const LandingPage = lazy(() => import('./views/navigations/LandingPage'));
 const MyWallet = lazy(() => import('./views/mywallet/MyWallet'));
 const AvatarGeneratorPage = lazy(() => import('./views/avatarpage/AvatarGeneratorPage'));
-const ScratchAvatar = lazy(() => import('./views/avatarpage/ScratchAvatar'));
-const AvatarConfigurator = lazy(() => import('./views/avatarpage/AvatarConfigurator'));
+const ScratchAvatar = lazy(() => import('./views/AvatarScrach/ScratchAvatar'));
+const AvatarConfigurator = lazy(() => import('./views/avatarconfiguration/AvatarConfigurator'));
 const LikedProfiles = lazy(() => import('./views/likedprofiles/LikedProfiles'));
 
 function App() {
