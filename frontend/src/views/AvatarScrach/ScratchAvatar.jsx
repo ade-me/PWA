@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import * as faceapi from 'face-api.js'; // Import face-api.js for face detection
 
 function ScratchAvatar() {
   const navigate = useNavigate();
@@ -9,71 +8,69 @@ function ScratchAvatar() {
   const [error, setError] = useState(null);
   const inputRef = useRef(null);
 
-  // Load face-api.js models when the component mounts
   useEffect(() => {
-    Promise.all([
-      faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-      faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-      faceapi.nets.faceRecognitionNet.loadFromUri('/models')
-    ]).catch(error => console.error('Error loading face-api models:', error));
+    // Load face-api.js models when the component mounts
+    async function loadModels() {
+      try {
+        const faceapi = await import('face-api.js');
+        await Promise.all([
+          faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
+          faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+          faceapi.nets.faceRecognitionNet.loadFromUri('/models')
+        ]);
+        console.log('Face-api models loaded successfully.');
+      } catch (error) {
+        console.error('Error loading face-api models:', error);
+        setError('Error loading face-api models. Please try again.');
+      }
+    }
+    loadModels();
   }, []);
 
   const handleCapture = async () => {
-    const isFaceDetected = await detectFace(); // Detect face before capturing
-    if (isFaceDetected) {
-      handleImageUpload(); // If face detected, capture image
-    } else {
-      setError('No face detected. Please try again.');
+    try {
+      const isFaceDetected = await detectFace();
+      if (isFaceDetected) {
+        handleImageUpload();
+      } else {
+        setError('No face detected. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error capturing image:', error);
+      setError('Error capturing image. Please try again.');
     }
   };
 
   const detectFace = async () => {
-    try {
-      const constraints = {
-        video: true
-      };
-
-      const stream = await navigator.mediaDevices.getUserMedia(constraints);
-      const video = document.createElement('video');
-      video.srcObject = stream;
-      video.play();
-
-      const result = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions());
-      stream.getTracks().forEach(track => track.stop());
-      return !!result;
-    } catch (error) {
-      console.error('Error detecting face:', error);
-      return false;
-    }
+    const constraints = { video: true };
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    const video = document.createElement('video');
+    video.srcObject = stream;
+    video.play();
+    const result = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions());
+    stream.getTracks().forEach(track => track.stop());
+    return !!result;
   };
 
   const handleImageUpload = async () => {
     try {
-      const constraints = {
-        video: true
-      };
-
+      const constraints = { video: true };
       const stream = await navigator.mediaDevices.getUserMedia(constraints);
       const video = document.createElement('video');
       video.srcObject = stream;
       video.play();
-
       const canvas = document.createElement('canvas');
       canvas.width = video.videoWidth;
       canvas.height = video.videoHeight;
       const context = canvas.getContext('2d');
-
       video.addEventListener('play', () => {
         const draw = () => {
-          if (video.paused || video.ended) {
-            return;
-          }
+          if (video.paused || video.ended) return;
           context.drawImage(video, 0, 0, canvas.width, canvas.height);
           requestAnimationFrame(draw);
         };
         draw();
       });
-
       setTimeout(() => {
         const imageDataUrl = canvas.toDataURL('image/png');
         setAvatar(imageDataUrl);
@@ -87,33 +84,26 @@ function ScratchAvatar() {
   };
 
   const sendImageToBackend = (imageDataUrl) => {
-    // Convert data URL to Blob
     fetch(imageDataUrl)
       .then(res => res.blob())
       .then(blob => {
-        // Create FormData object to send file
         const formData = new FormData();
         formData.append('avatar', blob, 'avatar.png');
-  
-        // Replace 'http://example.com/upload' with your actual backend API endpoint
-        axios.post('http://example.com/upload', formData, {
-        })
-        .then(response => {
-          console.log('Image sent to backend:', response.data);
-          // Navigate to another page after uploading
-          navigate('/configurator'); // Navigate to the '/configurator' route
-        })
-        .catch(error => {
-          console.error('Error sending image to backend:', error);
-          setError('Error sending image to backend. Please try again.'); // Set error state
-        });
+        axios.post('http://example.com/upload', formData)
+          .then(response => {
+            console.log('Image sent to backend:', response.data);
+            navigate('/configurator');
+          })
+          .catch(error => {
+            console.error('Error sending image to backend:', error);
+            setError('Error sending image to backend. Please try again.');
+          });
       })
       .catch(error => {
         console.error('Error converting image data:', error);
-        setError('Error converting image data. Please try again.'); // Set error state
+        setError('Error converting image data. Please try again.');
       });
   };
-  
 
   return (
     <div className="avatar-generator-page flex items-center justify-center h-[100vh]">

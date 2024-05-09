@@ -44,9 +44,10 @@ const VideoPlayer = ({ src, name, videocaption }) => {
 
     return (
         <section className="video-container relative">
-            <video ref={videoRef} autoPlay>
+            <video ref={videoRef} autoPlay loop>
                 <source src={src} type="video/mp4" className='w-[100%]'/>
             </video>
+            <div className="background-video" style={{ backgroundImage: `url(${src})` }} />
             <div className="controls absolute bottom-60 left-0 flex justify-between w-[100%]">
                 <button onClick={() => seekVideo(-10)}>Rewind 10s</button>
                 <button onClick={togglePlayPause} className={`text-white ${isPlaying ? 'activePause' : 'active'}`}>

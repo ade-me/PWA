@@ -1,29 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import SwiperCard from './SwiperCard';
-// import LikedProfiles from '../../../views/likedprofiles/LikedProfiles';
 
 function Swiper({ profiles, searchTerm }) {
   const [shuffledProfiles, setShuffledProfiles] = useState([]);
   const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
   const [likedProfiles, setLikedProfiles] = useState([]);
   const [noUserFound, setNoUserFound] = useState(false);
-
-  useEffect(() => {
-    const storedLikedProfiles = localStorage.getItem('likedProfiles');
-    if (storedLikedProfiles) {
-      try {
-        setLikedProfiles(JSON.parse(storedLikedProfiles));
-      } catch (error) {
-        console.error('Error parsing stored liked profiles:', error);
-        localStorage.removeItem('likedProfiles');
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('likedProfiles', JSON.stringify(likedProfiles));
-  }, [likedProfiles]);
 
   useEffect(() => {
     const shuffleArray = (array) => {

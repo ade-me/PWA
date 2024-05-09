@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import * as faceapi from 'face-api.js';
-import { toast } from 'react-hot-toast';
 
 function AvatarGeneratorPage() {
   const [image, setImage] = useState(null);
@@ -10,13 +9,12 @@ function AvatarGeneratorPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Load face-api.js models
-    loadFaceApiModels();
+    // Dynamically import face-api.js
+    import('face-api.js').then((faceapi) => loadFaceApiModels(faceapi.default));
   }, []);
 
-  const loadFaceApiModels = async () => {
+  const loadFaceApiModels = async (faceapi) => {
     try {
-      // Load face-api.js models
       await Promise.all([
         faceapi.nets.tinyFaceDetector.loadFromUri('/models'), // Load face detection model
         faceapi.nets.faceLandmark68Net.loadFromUri('/models'), // Load face landmarks model
@@ -24,21 +22,20 @@ function AvatarGeneratorPage() {
       ]);
       console.log('Face-api models loaded successfully.');
     } catch (error) {
-      toast.error('Error loading face-api models:', error);
+      console.error('Error loading face-api models:', error);
     }
   };
   
-
   const handleImageUpload = async (event) => {
     const uploadedImage = event.target.files[0];
   
     if (!uploadedImage) {
-      toast.error("No image selected");
+      console.error("No image selected");
       return;
     }
   
     if (!uploadedImage.type.startsWith('image/')) {
-      toast.error("Selected file is not an image");
+      console.error("Selected file is not an image");
       return;
     }
   
@@ -55,20 +52,16 @@ function AvatarGeneratorPage() {
         setAvatar(imageDataUrl);
         sendImageToBackend(uploadedImage);
       } else {
-        toast.error("No faces detected");
+        console.error("No faces detected");
         // Handle case where no faces are detected
       }
     };
   
     img.onerror = () => {
-      toast.error("Error loading image");
+      console.error("Error loading image");
     };
   };
   
-  
-  
-  
-
   const sendImageToBackend = (imageDataUrl) => {
     fetch(imageDataUrl)
       .then(res => res.blob())
@@ -79,15 +72,15 @@ function AvatarGeneratorPage() {
         axios.post('http://example.com/upload', formData, {
         })
         .then(response => {
-          toast.success('Image sent to backend:', response.data);
+          console.log('Image sent to backend:', response.data);
           navigate('/configurator');
         })
         .catch(error => {
-          toast.error('Error sending image to backend:', error);
+          console.error('Error sending image to backend:', error);
         });
       })
       .catch(error => {
-        toast.error('Error converting image data:', error);
+        console.error('Error converting image data:', error);
       });
   };
 
