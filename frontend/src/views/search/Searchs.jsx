@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import ProfilesData from './ProfilesData';
-import Swiper from '../../components/CameraInput/Swiper/Swiper'; // Import Swiper component
+import Swiper from '../../components/Swiper/Swiper'; // Import Swiper component
 
 function Searchs() {
   const [searchTerm, setSearchTerm] = useState('');
