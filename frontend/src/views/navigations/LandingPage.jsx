@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Home from '../homepage/Home';
 import { ImHome } from "react-icons/im";
 import { FaSquarePlus } from "react-icons/fa6";
-import PostingModal from './PostingModal';
-import './TestStyles.css';
 import Profile from '../profile/Profile';
 import Searchs from '../search/Searchs';
 import Videos from '../videos/Videos';
+
+// Import PostingModal component
+import PostingModal from './PostingModal';
 
 function HomeScreen() {
   return (
@@ -123,7 +124,7 @@ function TabNavigator() {
         {selectedTab === 'Home' && <HomeScreen />}
         {selectedTab === 'Search' && <SearchScreen />}
         {/* Renders modal */}
-        <PostingModal isOpen={isModalOpen} onClose={closeModal} />
+        {selectedTab === 'Post' && <PostingModal isOpen={isModalOpen} onClose={closeModal} />}
         {selectedTab === 'Videos' && <VideosScreen />}
         {selectedTab === 'Profile' && <ProfileScreen />}
       </div>
