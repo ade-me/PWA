@@ -12,6 +12,7 @@ const AvatarGeneratorPage = lazy(() => import('./views/avatarpage/AvatarGenerato
 const ScratchAvatar = lazy(() => import('./views/AvatarScrach/ScratchAvatar'));
 const AvatarConfigurator = lazy(() => import('./views/avatarconfiguration/AvatarConfigurator'));
 const LikedProfiles = lazy(() => import('./views/likedprofiles/LikedProfiles'));
+const PrivateAvatar = lazy(() => import('./views/privateavatar/PrivateAvatar'));
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/login' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><Login /></Suspense>} />
         <Route path='/avatar-generator' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><AvatarGeneratorPage /></Suspense>} />
         <Route path='/scratch-avatar' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><ScratchAvatar /></Suspense>} />
+        <Route path='/private-avatar' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><PrivateAvatar /></Suspense>} />
         <Route path='/configurator' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><AvatarConfigurator /></Suspense>} />
         <Route path='/forgot-password' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><ForgotPassword /></Suspense>} />
         <Route path='/home' element={<Suspense fallback={<div className="flex items-center justify-center h-[100vh]">Loading...</div>}><LandingPage /></Suspense>} />
