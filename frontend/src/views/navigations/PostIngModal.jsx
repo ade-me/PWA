@@ -1,15 +1,13 @@
-import React, { useState, lazy, Suspense } from 'react';
+import React, { useState } from 'react';
+import { LiaTimesSolid } from 'react-icons/lia';
+import { CiFaceSmile } from "react-icons/ci";
+import { IoIosInformationCircle } from "react-icons/io";
+import { FaCirclePlus } from "react-icons/fa6";
 import './TestStyles.css';
-import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
-
-// Lazy loading icons
-const LiaTimesSolid = lazy(() => import('react-icons/lia').then(module => ({ default: module.LiaTimesSolid })));
-const CiFaceSmile = lazy(() => import('react-icons/ci').then(module => ({ default: module.CiFaceSmile })));
-const IoIosInformationCircle = lazy(() => import('react-icons/io').then(module => ({ default: module.IoIosInformationCircle })));
-const FaCirclePlus = lazy(() => import('react-icons/fa6').then(module => ({ default: module.FaCirclePlus })));
 
 function PostingModal({ isOpen, onClose }) {
     const [selectedFiles, setSelectedFiles] = useState([]);
@@ -103,7 +101,7 @@ function PostingModal({ isOpen, onClose }) {
                 <div className='h-[100%] flex flex-col justify-between'>
                     <div className='h-[3rem] flex items-center justify-between pl-3 pr-3'>
                         <h1 className='text-[1.2rem] font-bold'>New Post</h1>
-                        <button onClick={onClose}><Suspense fallback={null}><LiaTimesSolid className='text-gray-700 text-2xl'/></Suspense></button>
+                        <button onClick={onClose}><LiaTimesSolid className='text-gray-700 text-2xl'/></button>
                     </div>
                     <div className='Underline h-[2px] bg-[#D9D9D9] mb-4'></div>
                     <div className='flex flex-col items-center justify-between h-[20rem] pl-3 pr-3'>
@@ -115,24 +113,25 @@ function PostingModal({ isOpen, onClose }) {
                                     type='text'
                                     placeholder='Write your Caption...'
                                 />
-                                <div onClick={toggleDrawer(true)} className='Emojis-btn flex items-center justify-center w-[40px]'><Suspense fallback={null}><CiFaceSmile className='text-[#c9c6c6] text-3xl'/></Suspense></div>
+                                <div onClick={toggleDrawer(true)} className='Emojis-btn flex items-center justify-center w-[40px]'>
+                                    <CiFaceSmile className='text-[#c9c6c6] text-3xl'/>
+                                </div>
                                 <Drawer className="custom-drawer" anchor="bottom" open={drawerOpen} onClose={toggleDrawer(false)}>
                                     <div className="bg-white p-4 w-[100%]">
                                     {emojis.map((emoji, index) => (
-                                        <Suspense key={index} fallback={null}>
-                                            <Button
-                                            onClick={() => handleEmojiClick(emoji)}
-                                            className={selectedEmojis.includes(emoji) ? "selected-emoji" : "emoji"}
-                                            >
-                                            {emoji}
-                                            </Button>
-                                        </Suspense>
+                                        <Button
+                                        key={index}
+                                        onClick={() => handleEmojiClick(emoji)}
+                                        className={selectedEmojis.includes(emoji) ? "selected-emoji" : "emoji"}
+                                        >
+                                        {emoji}
+                                        </Button>
                                     ))}
                                     </div>
                                 </Drawer>
                             </div>
                             <div className='Info-box flex items-center gap-2 w-[100%] h-[4.5rem] p-1'>
-                                <Suspense fallback={null}><IoIosInformationCircle className="text-7xl font-bold text-[#adabab]"/></Suspense>
+                                <IoIosInformationCircle className="text-7xl font-bold text-[#adabab]"/>
                                 <p className="text-[11px] text-[#adabab]">Remember, you can upload up to 100MB.
                                     videos cannot exceed 3 minutes and 30 second and you
                                     cannot upload photos higher than 5MB.
@@ -145,14 +144,18 @@ function PostingModal({ isOpen, onClose }) {
                                     <video key={index} src={url} alt={`Preview ${index}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} controls /> :
                                     <img key={index} src={url} alt={`Preview ${index}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 ))}
-                                {previewUrls.length === 0 && <div className='flex flex-col gap-2 w-[100%] h-[100%] items-center justify-center'><Suspense fallback={null}><FaCirclePlus className='text-4xl text-[#adabab]' /></Suspense><span className='text-[14px] font-bold'>Add Photo</span></div>}
+                                {previewUrls.length === 0 && <div className='flex flex-col gap-2 w-[100%] h-[100%] items-center justify-center'>
+                                    <FaCirclePlus className='text-4xl text-[#adabab]' />
+                                    <span className='text-[14px] font-bold'>Add Photo</span>
+                                </div>
+                                }
                             </label>
                         </div>
                     </div>
                     <div className='h-[20%] w-[100%] flex flex-col justify-between p-3'>
                         <div className='Public-boxn flex justify-between'>
                             <div className='Public flex gap-2 items-center'>
-                                <Suspense fallback={null}><IoIosInformationCircle className="text-3xl font-bold text-[#adabab]" /></Suspense>
+                                <IoIosInformationCircle className="text-3xl font-bold text-[#adabab]" />
                                 <p className='text-[14px] font-bold text-gray-500'>Public Post</p>
                             </div>
                             {/* Toggler here */}
@@ -164,7 +167,7 @@ function PostingModal({ isOpen, onClose }) {
                         <div className='Underline h-[2px] bg-[#D9D9D9]'></div>
                         <div className='Premium-box flex justify-between'>
                             <div className='Premium flex gap-2 items-center'>
-                                <Suspense fallback={null}><IoIosInformationCircle className="text-3xl font-bold text-[#adabab]" /></Suspense>
+                                <IoIosInformationCircle className="text-3xl font-bold text-[#adabab]" />
                                 <p className='text-[14px] font-bold text-gray-500'>Premium Content</p>
                             </div>
                             {/* Toggler here */}
