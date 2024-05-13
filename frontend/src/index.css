@@ -352,4 +352,8 @@ input:hover, textarea:hover {
     width: 100vw;
     height: 87vh;
 }
+.Post-container-5{
+  max-width: 8.1rem;
+}
+
 }

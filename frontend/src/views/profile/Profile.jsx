@@ -90,46 +90,46 @@ function Profile() {
                 </div>
             </div>
             <div className='h-[50vh]'>
-              <div className='TESTEST flex items-center justify-center gap-[6rem] mb-3'>
-                <button className={activeTab === 'tab1' ? 'active-tab-1' : ''} onClick={() => handleTabClick('tab1')}>120 POSTS</button>
-                <button className={activeTab === 'tab2' ? 'active-tab-2' : ''} onClick={() => handleTabClick('tab2')}>232 MEDIA</button>
-              </div>
-            
-              <div className='flex mb-4 h-[2px] bg-[#c6c6c6]' style={{ width: '100%' }}>
-                  <div
-                      className="indicator-bar"
-                      style={{
-                          left: activeTab === 'tab1' ? 0 : '50%',
-                          transition: 'left 0.3s ease',
-                          backgroundColor: activeTab === 'tab1' ? 'black' : '#c6c6c6',
-                      }}
-                  />
-                  <div
-                      className="indicator-bar"
-                      style={{
-                          right: activeTab === 'tab2' ? 0 : '50%',
-                          transition: 'rigth 0.3s ease',
-                          backgroundColor: activeTab === 'tab2' ? 'black' : '#c6c6c6',
-                      }}
-                  />
-              </div>
-      
-              <ul className="tab-content-2 flex flex-wrap gap-2" style={{ display: activeTab === 'tab1' ? 'flex' : 'none', alignItems: 'start', justifyContent: 'center' }}>
-                  {/* Content for (posts) */}
-                  <li className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'>Post</li>
-                  <li className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></li>
-                  <li className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></li>
-                  <li className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></li>
-              </ul>
-            
-              <div className="tab-content-2 flex flex-wrap gap-2" style={{ display: activeTab === 'tab2' ? 'flex' : 'none', alignItems: 'start', justifyContent: 'center' }}>
-                {/* Content for (media collection) */}
-                <div className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'>Media</div>
-                <div className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
-                <div className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
-                <div className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
-              </div>
-          </div>
+                            <div className='TESTEST flex items-center justify-center gap-[6rem] mb-3'>
+                            <button className={activeTab === 'tab1' ? 'active-tab-1' : ''} onClick={() => handleTabClick('tab1')}>120 Photos</button>
+                            <button className={activeTab === 'tab2' ? 'active-tab-2' : ''} onClick={() => handleTabClick('tab2')}>232 Videos</button>
+                            </div>
+                        
+                            <div className='flex mb-4 h-[2px] bg-[#c6c6c6]' style={{ width: '100%' }}>
+                                <div
+                                    className="indicator-bar"
+                                    style={{
+                                        left: activeTab === 'tab1' ? 0 : '50%',
+                                        transition: 'left 0.3s ease',
+                                        backgroundColor: activeTab === 'tab1' ? 'black' : '#c6c6c6',
+                                    }}
+                                />
+                                <div
+                                    className="indicator-bar"
+                                    style={{
+                                        right: activeTab === 'tab2' ? 0 : '50%',
+                                        transition: 'rigth 0.3s ease',
+                                        backgroundColor: activeTab === 'tab2' ? 'black' : '#c6c6c6',
+                                    }}
+                                />
+                            </div>
+                    
+                            <ul className="tab-content-2 flex flex-wrap gap-2" style={{ display: activeTab === 'tab1' ? 'flex' : 'none', alignItems: 'start', justifyContent: 'flex-start' }}>
+                                {/* Content for (posts) */}
+                                <li className='Post-container-5 flex-shrink-0 w-full max-w-[7.2rem] h-[8.1rem] rounded-[7px] bg-gray-300'>Post</li>
+                                <li className='Post-container-5 flex-shrink-0 w-full max-w-[7.2rem] h-[8.1rem] rounded-[7px] bg-gray-300'></li>
+                                <li className='Post-container-5 flex-shrink-0 w-full max-w-[7.2rem] h-[8.1rem] rounded-[7px] bg-gray-300'></li>
+                                <li className='Post-container-5 flex-shrink-0 w-full max-w-[7.2rem] h-[8.1rem] rounded-[7px] bg-gray-300'></li>
+                            </ul>
+                        
+                            <div className="tab-content-2 flex flex-wrap gap-2" style={{ display: activeTab === 'tab2' ? 'flex' : 'none', alignItems: 'start', justifyContent: 'center' }}>
+                            {/* Content for (media collection) */}
+                            <div className='Post-container-5 flex-shrink-0 w-full max-w-[10rem] h-[12rem] rounded-[7px] bg-gray-300'>Media</div>
+                            <div className='Post-container-5 flex-shrink-0 w-full max-w-[10rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
+                            <div className='Post-container-5 flex-shrink-0 w-full max-w-[10rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
+                            <div className='Post-container-5 flex-shrink-0 w-full max-w-[10rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
+                            </div>
+                        </div>  
           </div>
       </section>
   )

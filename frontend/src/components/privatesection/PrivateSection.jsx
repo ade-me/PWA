@@ -186,8 +186,7 @@ function PrivateSection({ backGroundImage }) {
                             <div className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
                             <div className='Post-container flex-shrink-0 w-full max-w-[12rem] h-[12rem] rounded-[7px] bg-gray-300'></div>
                             </div>
-                        </div>
-                       
+                        </div>  
                     </div>
                 </div>
             </div>
