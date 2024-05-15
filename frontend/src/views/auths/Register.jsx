@@ -75,19 +75,19 @@ const handleSubmit = async (e) => {
             <div className="Social-btns w-full flex items-center rounded-full border border-black-500">
               <div className="w-full h-full text-black-500 flex items-center gap-4">
                 <div className="w-8 h-8 bg-black rounded-full border flex items-center justify-center"></div>
-                <input type='text' name='fullName' placeholder='Full Name' className='Input' value={formData.fullName} onChange={handleInputChange} />
+                <input type='text' name='fullName' placeholder='Full Name' autoComplete='new-fullName' className='Input' value={formData.fullName} onChange={handleInputChange} />
               </div>
             </div>
             <div className="Social-btns w-full flex items-center rounded-full border border-black-500">
               <div className="w-full h-full text-black-500 flex items-center gap-4">
                 <div className="w-8 h-8 bg-black rounded-full border flex items-center justify-center"></div>
-                <input type='email' name='email' placeholder='Email or Telephone' className='Input' value={formData.email} onChange={handleInputChange} />
+                <input type='email' name='email' placeholder='Email' autoComplete='new-email' className='Input' value={formData.email} onChange={handleInputChange} />
               </div>
             </div>
             <div className="Social-btns w-full flex items-center justify-between rounded-full border border-black-500">
               <div className="w-full text-black-500 flex items-center gap-4">
                 <div className="w-8 h-8 bg-black rounded-full border flex items-center justify-center"></div>
-                <input type={showPassword ? 'text' : 'password'} name='password' className='Input items-center' placeholder='Password' value={formData.password} onChange={handleInputChange} />
+                <input type={showPassword ? 'text' : 'password'} name='password' autoComplete='new-password' className='Input items-center' placeholder='Password' value={formData.password} onChange={handleInputChange} />
               </div>
               <div className='Password-visibility' onClick={togglePasswordVisibility}>
                 {!showPassword ? <VisibilityOffRounded className='Visibility-Icon'/> : <VisibilityRounded className='Visibility-Icon'/>}
@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
             <div className="Social-btns w-full flex items-center justify-between rounded-full border border-black-500">
               <div className="w-full text-black-500 flex items-center gap-4">
                 <div className="w-8 h-8 bg-black rounded-full border flex items-center justify-center"></div>
-                <input type={showPasswordTwo ? 'text' : 'password'} name='confirmPassword' className='Input items-center' placeholder='Repeat Password' value={formData.confirmPassword} onChange={handleInputChange} />
+                <input type={showPasswordTwo ? 'text' : 'password'} name='confirmPassword' autoComplete='new-confirmPassword' className='Input items-center' placeholder='Repeat Password' value={formData.confirmPassword} onChange={handleInputChange} />
               </div>
               <div className='Password-visibility' onClick={togglePasswordVisibilityTwo}>
                 {!showPasswordTwo ? <VisibilityOffRounded className='Visibility-Icon'/> : <VisibilityRounded className='Visibility-Icon'/>}
