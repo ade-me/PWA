@@ -14,7 +14,7 @@ function Profile() {
       <section className='Profile-container flex items-center justify-center flex-col h-full'>
           <div className='Profile-Nav top-0 fixed w-full h-16 bg-white flex items-center justify-between p-6'>
             <span className='text-2xl font-bold'>Profile</span>
-              <Link to='#'>
+              <Link to='/settings'>
                 <svg  
                     width="22"
                     height="22"

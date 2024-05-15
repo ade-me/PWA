@@ -64,13 +64,13 @@ function Login() {
             <div className="Social-btns w-full flex items-center rounded-full border border-black-500">
               <div className="w-full h-full text-black-500 flex items-center gap-4">
                 <div className="w-8 h-8 bg-black rounded-full border flex items-center justify-center">text</div>
-                <input type='email' name='email' placeholder='example@gmail.com' className='Input' value={data.email} onChange={handleChange} />
+                <input type='email' name='email' placeholder='example@gmail.com' className='Input' value={data.email} onChange={handleChange} autoComplete='new-email'/>
               </div>
             </div>
             <div className="Social-btns w-full flex items-center justify-between rounded-full border border-black-500">
               <div className="w-full text-black-500 flex items-center gap-4">
                 <div className="w-8 h-8 bg-black rounded-full border flex items-center justify-center"></div>
-                <input type={showPassword ? 'text' : 'password'} name='password' className='Input items-center' placeholder='Password' value={data.password} onChange={handleChange} />
+                <input type={showPassword ? 'text' : 'password'} name='password' className='Input items-center' placeholder='Password' value={data.password} onChange={handleChange} autoComplete='new-password'/>
               </div>
               <div className='Password-visibility' onClick={togglePasswordVisibility}>
                 {!showPassword ? <VisibilityOffRounded className='Visibility-Icon'/> : <VisibilityRounded className='Visibility-Icon'/>}
