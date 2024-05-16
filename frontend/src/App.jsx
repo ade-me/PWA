@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter as Router
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Import views using lazy loading
 const Welcome = lazy(() => import('./views/auths/Welcome'));
