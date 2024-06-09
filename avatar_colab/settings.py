@@ -75,22 +75,22 @@ WSGI_APPLICATION = 'avatar_colab.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres.idpabuhgcwhdpgjigaev',
-        'PASSWORD': 'Kelechi1999!',
-        'PORT': '5432 ',
-        'HOST': 'aws-0-eu-central-1.pooler.supabase.com'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres.idpabuhgcwhdpgjigaev',
+#         'PASSWORD': 'Kelechi1999!',
+#         'PORT': '5432 ',
+#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com'
+#     }
+# }
 # user=postgres.idpabuhgcwhdpgjigaev
 # password=[YOUR-PASSWORD]
 # host=aws-0-eu-central-1.pooler.supabase.com port=5432

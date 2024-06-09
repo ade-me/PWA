@@ -1,0 +1,4 @@
+sudo apt update
+sudo apt install build-essential cmake
+apt-get install ffmpeg libsm6 libxext6 -y
+Google bard(Gemini), perplexity, scispace, elicit, Monica

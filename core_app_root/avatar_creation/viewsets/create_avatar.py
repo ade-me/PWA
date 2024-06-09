@@ -17,6 +17,8 @@ class CreateAvatar(viewsets.ModelViewSet):
 
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
+        
+        # get the model of the 3d
         if serializer.is_valid():
             # Load pre-trained face detector from dlib
             detector = dlib.get_frontal_face_detector()
